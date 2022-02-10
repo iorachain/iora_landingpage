@@ -1,0 +1,16 @@
+@import "../../style/global.scss";
+
+#Content {
+  position: relative;
+  min-height: 8vh;
+  flex: 1;
+
+  @include xs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $grayLight;
+    height: 100%;
+  }
+}

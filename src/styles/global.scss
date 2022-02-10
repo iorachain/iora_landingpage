@@ -1,0 +1,54 @@
+@import "~bootstrap/scss/bootstrap/";
+@import "./colors";
+@import "./fonts";
+@import "./mixin";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  background: $white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: $green;
+  text-decoration: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+}
+
+h4 {
+  font-size: 38px;
+  line-height: 57px;
+  letter-spacing: -0.0015em;
+  font-weight: 700;
+  padding-bottom: 18px;
+}
+
+p {
+  margin-bottom: 0;
+  font-size: 24px;
+  line-height: 36px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
