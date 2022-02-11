@@ -5,14 +5,16 @@ import styles from "./styles.module.scss";
 
 const Layout = () => {
   return (
-    <div id="Layout">
-      <Header />
+    <div id={styles.Layout}>
+      <header id={styles.Header}>
+        <Header />
+      </header>
       <section id={styles.Content}>
-        <div className={styles.ContentWrap}>
-          <Outlet />
-        </div>
+        <Outlet />
       </section>
-      <Footer />
+      <footer id={styles.Footer}>
+        <Footer />
+      </footer>
     </div>
   );
 };

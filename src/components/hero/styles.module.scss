@@ -1,0 +1,74 @@
+@import "../../styles/global.scss";
+
+#Hero {
+  background: $navy;
+  display: flex;
+  justify-content: space-between;
+  font-family: Manrope;
+  color: $white;
+  padding-left: 2vw;
+
+  .callToAction {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+  }
+
+  .latamImage {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .title {
+    font-family: Manrope;
+    font-size: 64px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .subtitle {
+    font-family: Manrope;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 45px;
+  }
+
+  .buttonArea {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5vh;
+  }
+
+  .actionButton {
+    color: $white;
+    font-family: Manrope;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 1vw 3vw;
+    margin-right: 2vw;
+  }
+
+  .explorerButton {
+    font-family: Manrope;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: $white;
+    color: $green;
+    padding: 1vw 3vw;
+  }
+
+  .explorerButton :hover{
+    background: $grayHover;
+  }
+}
+
+.subFooter {
+    min-height: 2vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}

@@ -1,56 +1,28 @@
-@import "../../style/global.scss";
+@import "../../styles/global.scss";
 
 #Header {
-  .navbar {
-    height: 45px;
-    display: flex;
+  height: 100%;
+  padding: 0 15px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $white;
+
+  .navbarBrand {
+    color: $white;
     align-items: center;
-    transition: height 0.7ms 0.3s ease;
-    margin: auto;
-    padding: 0px 30px;
-    list-style: none;
-    li {
-      cursor: pointer;
-    }
-  }
-  .navItem {
-    font-size: 12px;
-    margin-right: 25px;
   }
 
-  .navbarBrand a {
-    color: $black;
-    display: flex;
+  .navbarLinks {
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 50vw;
+  }
+
+  .navbarTools {
+    color: $white;
     justify-content: center;
     align-items: center;
-
-    :first-child {
-      margin-left: 5px;
-    }
-  }
-
-  .navbarCollapse {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-right: 30px;
-
-    @include xs {
-      margin: 0;
-    }
-  }
-
-  .rightOptions {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    :first-child {
-      margin-right: 10px;
-    }
-
-    button {
-      color: $white;
-    }
   }
 }

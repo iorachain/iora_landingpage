@@ -1,0 +1,25 @@
+@import "../../styles/global.scss";
+
+#Layout {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+#Header {
+  height: 12vh;
+  width: 100vw;
+  background: $navy;
+}
+
+
+#Content {
+  min-height: 90vh;
+  width: 100vw;
+}
+
+#Footer {
+  height: 30vh;
+}
+
