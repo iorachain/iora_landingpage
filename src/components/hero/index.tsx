@@ -3,6 +3,7 @@ import SubHero from "../../assets/imgs/subHero.svg";
 import { Image } from "react-bootstrap";
 import styles from "./styles.module.scss";
 import Button from "@mui/material/Button";
+import { BrowserView, isMobile } from "react-device-detect";
 
 const Hero = () => {
   return (
@@ -32,12 +33,14 @@ const Hero = () => {
             </Button>
           </div>
         </div>
-        <div className={styles.latamImage}>
-          <Image height={500} src={Latam} alt="Latam" />
-        </div>
+        <BrowserView>
+          <div className={styles.latamImage}>
+            <Image height={500} src={Latam} alt="Latam" />
+          </div>
+        </BrowserView>
       </div>
       <div className={styles.subFooter}>
-        <Image height={90} src={SubHero} />
+        <Image height={isMobile ? 60 : 90} src={SubHero} />
       </div>
     </>
   );

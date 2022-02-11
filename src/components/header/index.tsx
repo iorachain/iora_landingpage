@@ -1,6 +1,8 @@
 import IoraChain from "../../assets/imgs/iorachain.svg";
-import { Image, Navbar, Container } from "react-bootstrap";
+import { Image, Navbar } from "react-bootstrap";
 import styles from "./styles.module.scss";
+import { BrowserView, MobileView } from "react-device-detect";
+import Menu from "../../assets/imgs/menu.svg";
 
 const Header = () => {
   return (
@@ -13,24 +15,29 @@ const Header = () => {
           </span>
         </div>
       </Navbar.Brand>
-      <Navbar.Collapse className={styles.navbarLinks}>
-        <span>Features</span>
-        <span> • </span>
-        <span>Roadmap</span>
-        <span> • </span>
-        <span>About us</span>
-        <span> • </span>
-        <span>Token Sale</span>
-        <span> • </span>
-        <span>Whitepaper</span>
-        <span> • </span>
-        <span>Dapps</span>
-      </Navbar.Collapse>
-      <Navbar.Text>
-        <div className={styles.navbarTools}>
-          <div>Language</div>
+      <BrowserView>
+        <div className={styles.navbarButtons}>
+          <Navbar.Collapse className={styles.navbarLinks}>
+            <span>Features</span>
+            <span> • </span>
+            <span>Roadmap</span>
+            <span> • </span>
+            <span>About us</span>
+            <span> • </span>
+            <span>Token Sale</span>
+            <span> • </span>
+            <span>Whitepaper</span>
+            <span> • </span>
+            <span>Dapps</span>
+          </Navbar.Collapse>
+          <div className={styles.navbarTools}>
+            <div>Language</div>
+          </div>
         </div>
-      </Navbar.Text>
+      </BrowserView>
+      <MobileView>
+        <Image height={50} src={Menu} alt="Menu" />
+      </MobileView>
     </Navbar>
   );
 };

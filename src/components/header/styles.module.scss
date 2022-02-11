@@ -9,9 +9,15 @@
   align-items: center;
   color: $white;
 
+  @include xs {
+    height: 10vh;
+    align-items: center;
+  }
+
   .navbarBrand {
     color: $white;
     align-items: center;
+    
   }
 
   .navbarLinks {
@@ -24,5 +30,12 @@
     color: $white;
     justify-content: center;
     align-items: center;
+  }
+
+  .navbarButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
   }
 }
