@@ -2,7 +2,7 @@ import Feature01 from "../../assets/imgs/list01.png";
 import Feature02 from "../../assets/imgs/list02.png";
 import Feature03 from "../../assets/imgs/list03.png";
 import Feature04 from "../../assets/imgs/list04.png";
-
+import { isMobile } from "react-device-detect";
 import { Image } from "react-bootstrap";
 import styles from "./style.module.scss";
 
@@ -13,7 +13,7 @@ const Features = () => {
       <div className={styles.listSection}>
         <div className={styles.listRow}>
           <Image
-            height={200}
+            height={isMobile ? 100 : 200}
             src={Feature01}
             alt=" ETHEREUM CLIQUE UPGRADED FORK"
           />
@@ -35,11 +35,15 @@ const Features = () => {
               Chain
             </div>
           </div>
-          <Image height={200} src={Feature02} alt="BUILDING IN SOLIDITY" />
+          <Image
+            height={isMobile ? 100 : 200}
+            src={Feature02}
+            alt="BUILDING IN SOLIDITY"
+          />
         </div>
         <div className={styles.listRow}>
           <Image
-            height={200}
+            height={isMobile ? 100 : 200}
             src={Feature03}
             alt="LOOKING FOR CBDC INTEGRATIONS"
           />
@@ -64,9 +68,9 @@ const Features = () => {
             </div>
           </div>
           <Image
-            height={200}
+            height={isMobile ? 100 : 200}
             src={Feature04}
-            alt="NFT's, LIVESTREAMING and METAVERSES"
+            alt="   NFT's, LIVESTREAMING and METAVERSES"
           />
         </div>
       </div>

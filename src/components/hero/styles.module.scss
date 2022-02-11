@@ -94,13 +94,11 @@
 }
 
 .subFooter {
-  min-height: 2vh;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
 
-
   @include xs {
-    width: 120vw;
+      margin-top: -2px;
   }
 }

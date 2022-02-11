@@ -3,6 +3,10 @@
 #Features {
   margin-top: 10vh;
 
+  @include xs {
+    margin: 15px;
+  }
+
   .title {
     display: flex;
     justify-content: center;
@@ -14,6 +18,11 @@
     color: $navy;
     text-shadow: 1px 1px 2px $black;
     margin-bottom: 10vh;
+
+    @include xs {
+      margin-bottom: 5vh;
+      font-size: 30px;
+    }
   }
 
   .listSection {
@@ -40,14 +49,26 @@
     flex-direction: row;
     align-items: center;
     margin-top: 2vh;
+
+    @include xs {
+      margin-top: 4vh;
+    }
   }
 
   .featuresTitle {
     font-weight: 800;
     font-size: 30px;
+
+    @include xs {
+      font-size: 20px;
+    }
   }
 
   .featuresSubTitle {
     font-size: 18px;
+
+    @include xs {
+      font-size: 14px;
+    }
   }
 }
