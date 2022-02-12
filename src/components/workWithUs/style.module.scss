@@ -3,6 +3,10 @@
 #WorkWithUs {
   margin: 4vh 8vh;
 
+  @include xs {
+    margin: 20px 40px;
+  }
+
   .titleWorkWithUs {
     display: flex;
     justify-content: center;
@@ -15,6 +19,11 @@
     margin-right: 10px;
     text-shadow: 0.5px 1px 2px $black;
     margin: 20vh auto 8vh auto;
+
+    @include xs {
+      margin: 5vh auto 2vh auto;
+      font-size: 30px;
+    }
   }
 
   .subTitleWorkWithUs {
@@ -22,13 +31,22 @@
     font-size: 40px;
     text-transform: uppercase;
     font-weight: 800;
+
+    @include xs {
+        margin-top: 30px;
+        font-size: 22px;
+    }
   }
 
   .sectionWorkWithUs {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
+
+    @include xs {
+        align-items: center;
+    }
   }
 
   .getStartedButton {
@@ -43,5 +61,11 @@
       font-size: 14px;
       font-weight: 800;
     }
+  }
+
+  .figureHireTeam {
+      display: flex;
+      justify-content: center;
+      align-items: center;
   }
 }

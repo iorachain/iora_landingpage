@@ -3,6 +3,7 @@ import { Col, Row } from "react-bootstrap";
 import { Image } from "react-bootstrap";
 import HireTeam from "../../assets/imgs/hire.svg";
 import Button from "@mui/material/Button";
+import { isMobile } from "react-device-detect";
 
 const WorkWithUs = () => {
   return (
@@ -10,7 +11,13 @@ const WorkWithUs = () => {
       <div className={styles.titleWorkWithUs}>Enjoy our team</div>
       <Row>
         <Col>
-          <Image height={400} src={HireTeam} alt="Enjoy our team" />
+          <div className={styles.figureHireTeam}>
+            <Image
+              width={isMobile ? 300 : 400}
+              src={HireTeam}
+              alt="Enjoy our team"
+            />
+          </div>
         </Col>
         <Col className={styles.sectionWorkWithUs}>
           <div className={styles.subTitleWorkWithUs}>
