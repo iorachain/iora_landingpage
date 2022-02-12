@@ -11,10 +11,17 @@
       min-height: 30vh;
   }
 
-  .logoSubtitle {
+  .logoTitle {
     font-size: 42px;
     color: $white;
     margin-right: 4vw;
+  }
+
+  .logoSubTitle {
+    font-size: 18px;
+    color: $white;
+    display: flex;
+    text-align: center;
   }
 
   .footerLogo {
