@@ -1,4 +1,54 @@
 @import "../../styles/global.scss";
 
 #Footer {
+  background: $navy;
+  padding: 10vh auto;
+
+  @include xs {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 30vh;
+  }
+
+  .logoSubtitle {
+    font-size: 42px;
+    color: $white;
+    margin-right: 4vw;
+  }
+
+  .footerLogo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    @include xs {
+        justify-content: center;
+        flex-direction: column;
+    }
+  }
+
+  .footerDapps {
+    color: $white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footerDocumentation {
+    color: $white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footerLinks {
+    color: $white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footerContactUs {
+    color: $white;
+    display: flex;
+    flex-direction: column;
+  }
 }
