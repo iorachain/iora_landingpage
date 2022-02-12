@@ -1,0 +1,54 @@
+@import "../../styles/global.scss";
+
+#Roadmap {
+  .titleRoadMap {
+    display: flex;
+    color: $navy;
+    font-family: Manrope;
+    text-transform: uppercase;
+    font-size: 42px;
+    line-height: 66px;
+    font-weight: 800;
+    margin-right: 10px;
+    text-shadow: 0.5px 1px 2px $black;
+  }
+
+  .sectionRoadMap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .roadMapDescription {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 15vw;
+  }
+
+  .roadMapDescriptionText {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 633px;
+    justify-content: flex-end;
+
+    img {
+      margin-top: 3vh;
+      margin-bottom: 1vh;
+      width: 100%;
+    }
+  }
+
+  .statusProgress {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: $grayDark;
+  }
+
+  .roadMapLine {
+      margin-top: 2vh;
+  }
+}

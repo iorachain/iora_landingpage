@@ -1,0 +1,68 @@
+@import "../../styles/global.scss";
+
+#Products {
+  min-height: 20vh;
+  width: 100vw;
+  background: $green_modal;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 2;
+
+  .productContainer {
+    background: $green_modal_2;
+    border-radius: 8px;
+    padding: 80px;
+    z-index: 5;
+    margin: 4vh auto;
+  }
+
+  .productTitles {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .productTitle {
+    display: flex;
+    color: $navy;
+    font-family: Manrope;
+    text-transform: uppercase;
+    font-size: 42px;
+    line-height: 66px;
+    font-weight: 800;
+    margin-right: 10px;
+    text-shadow: 0.5px 1px 2px $black;
+  }
+
+  .productSubTitle {
+    display: flex;
+    color: $navy;
+    font-family: Manrope;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+  .productDescription {
+    font-size: 18px;
+    margin-top: 20px;
+
+    :first-child {
+      max-width: 60vw;
+    }
+  }
+
+  .productColumns {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .productColumnSubTitle {
+    font-family: Manrope;
+    font-weight: 700;
+    font-size: 30px;
+  }
+}
