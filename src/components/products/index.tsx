@@ -5,12 +5,13 @@ import Praora from "../../assets/imgs/praora.svg";
 import Line from "../../assets/imgs/line.svg";
 import Caldeus from "../../assets/imgs/caldeus.svg";
 import IoraPay from "../../assets/imgs/iorapay.svg";
+import { isMobile } from "react-device-detect";
 
 const Products = () => {
   return (
     <>
       <div id={styles.Products}>
-        <Image height={300} src={IoraChain} alt="Iora Chain" />
+        <Image height={isMobile ? 150 : 300} src={IoraChain} alt="Iora Chain" />
         <div className={styles.productContainer}>
           <div className={styles.productTitles}>
             <span className={styles.productTitle}>IoraChain</span>
@@ -74,10 +75,10 @@ const Products = () => {
             </Col>
           </Row>
         </div>
-        <Image height={300} src={Praora} alt="Praora" />
+        <Image height={isMobile ? 150 : 300} src={Praora} alt="Praora" />
       </div>
       <div id={styles.Products}>
-        <Image height={300} src={Caldeus} alt="Caldeus" />
+        <Image height={isMobile ? 150 : 300} src={Caldeus} alt="Caldeus" />
         <div className={styles.productContainer}>
           <div className={styles.productTitles}>
             <span className={styles.productTitle}>CALDEUS</span>
@@ -140,7 +141,7 @@ const Products = () => {
             </Col>
           </Row>
         </div>
-        <Image height={300} src={IoraPay} alt="IoraPay" />
+        <Image height={isMobile ? 150 : 300} src={IoraPay} alt="IoraPay" />
       </div>
     </>
   );

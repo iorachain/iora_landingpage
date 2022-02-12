@@ -3,6 +3,7 @@
 #Roadmap {
   .titleRoadMap {
     display: flex;
+    justify-content: flex-start;
     color: $navy;
     font-family: Manrope;
     text-transform: uppercase;
@@ -11,6 +12,7 @@
     font-weight: 800;
     margin-right: 10px;
     text-shadow: 0.5px 1px 2px $black;
+    margin: 5vh auto;
   }
 
   .sectionRoadMap {
@@ -18,6 +20,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    @include xs {
+      padding: 30px;
+    }
   }
 
   .roadMapDescription {
@@ -25,6 +31,14 @@
     justify-content: flex-start;
     align-items: flex-end;
     width: 15vw;
+
+    @include xs {
+      width: 5vw;
+      margin-top: 4vh;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
   }
 
   .roadMapDescriptionText {
@@ -34,11 +48,25 @@
     max-width: 633px;
     justify-content: flex-end;
 
-    img {
-      margin-top: 3vh;
-      margin-bottom: 1vh;
-      width: 100%;
+    @include xs {
+      margin-top: 4vh;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
     }
+  }
+
+  .titleRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .barProgress {
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+    width: 100%;
+    max-width: 50vw;
   }
 
   .statusProgress {
@@ -49,6 +77,12 @@
   }
 
   .roadMapLine {
-      margin-top: 2vh;
+    margin-top: 2vh;
+
+    @include xs {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
   }
 }

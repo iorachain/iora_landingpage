@@ -1,0 +1,47 @@
+@import "../../styles/global.scss";
+
+#WorkWithUs {
+  margin: 4vh 8vh;
+
+  .titleWorkWithUs {
+    display: flex;
+    justify-content: center;
+    color: $navy;
+    font-family: Manrope;
+    text-transform: uppercase;
+    font-size: 42px;
+    line-height: 66px;
+    font-weight: 800;
+    margin-right: 10px;
+    text-shadow: 0.5px 1px 2px $black;
+    margin: 20vh auto 8vh auto;
+  }
+
+  .subTitleWorkWithUs {
+    font-family: Manrope;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+
+  .sectionWorkWithUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .getStartedButton {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2vh;
+
+    button {
+      padding: 15px 50px;
+      color: $white;
+      font-size: 14px;
+      font-weight: 800;
+    }
+  }
+}
