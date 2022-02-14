@@ -3,8 +3,11 @@ import { Row, Col, Image } from "react-bootstrap";
 import ArrowUp from "../../assets/imgs/arrowUp.svg";
 import BarProgress from "../UI/barProgress";
 import { isMobile, BrowserView, MobileView } from "react-device-detect";
+import { useTranslation } from "react-i18next";
 
 const Roadmap = () => {
+  const { t } = useTranslation();
+
   return (
     <section id={styles.Roadmap}>
       <div className={styles.sectionRoadMap}>
@@ -16,8 +19,8 @@ const Roadmap = () => {
               <BrowserView>
                 <div className={"d-flex p-3"}>
                   <div>
-                    <b>2021 - 1st Semester</b>
-                    <div>Research</div>
+                    <b>{t("roadMap.20202stSemester")}</b>
+                    <div>{t("roadMap.research")}</div>
                   </div>
                 </div>
               </BrowserView>
@@ -25,16 +28,15 @@ const Roadmap = () => {
           </Col>
           <Col xs={10} md={8} className={styles.roadMapDescriptionText}>
             <MobileView>
-              <b>2021 - 1st Semester</b>
-              <div>Research</div>
+              <b>{t("roadMap.20211stSemester")}</b>
+              <div>{t("roadMap.research")}</div>
             </MobileView>
-            Marketing studies of CDBCs adaptations. Researching business modal
-            and integrations from Brazil Central Bank
+            {t("roadMap.CDBCsDescription")}
             <div className={styles.barProgress}>
               <BarProgress perCent={10000} width={isMobile ? 280 : 550} />
             </div>
             <div className={styles.statusProgress}>
-              <div>Progress</div>
+              <div>{t("roadMap.progress")}</div>
               <div>100%</div>
             </div>
           </Col>
@@ -46,8 +48,8 @@ const Roadmap = () => {
               <BrowserView>
                 <div className={"d-flex p-3"}>
                   <div>
-                    <b>2021 - 1st Semester</b>
-                    <div>Investments and hires</div>
+                    <b>{t("roadMap.20211stSemester")}</b>
+                    <div>{t("roadMap.investmentsHire")}</div>
                   </div>
                 </div>
               </BrowserView>
@@ -55,17 +57,15 @@ const Roadmap = () => {
           </Col>
           <Col xs={10} md={8} className={styles.roadMapDescriptionText}>
             <MobileView>
-              <b>2021 - 1st Semester</b>
-              <div>Investments and hires</div>
+              <b>{t("roadMap.20211stSemester")}</b>
+              <div>{t("roadMap.investmentsHire")}</div>
             </MobileView>
-            Through personal private investment, materials and team were hired
-            for studies and development of user experience, as well as the
-            development of the Iora Pay.
+            {t("roadMap.investmentsHireDescription")}
             <div className={styles.barProgress}>
               <BarProgress perCent={10000} width={isMobile ? 280 : 550} />
             </div>
             <div className={styles.statusProgress}>
-              <div>Progress</div>
+              <div>{t("roadMap.progress")}</div>
               <div>100%</div>
             </div>
           </Col>
@@ -77,8 +77,8 @@ const Roadmap = () => {
               <BrowserView>
                 <div className={"d-flex p-3"}>
                   <div>
-                    <b>2021 - 2nd Semester</b>
-                    <div>Validation</div>
+                    <b>{t("roadMap.20212stSemester")}</b>
+                    <div>{t("roadMap.validation")}</div>
                   </div>
                 </div>
               </BrowserView>
@@ -86,16 +86,15 @@ const Roadmap = () => {
           </Col>
           <Col xs={10} md={8} className={styles.roadMapDescriptionText}>
             <MobileView>
-              <b>2021 - 2nd Semester</b>
-              <div>Validation</div>
+              <b>{t("roadMap.20212stSemester")}</b>
+              <div>{t("roadMap.validation")}</div>
             </MobileView>
-            First user experience tests, market research, beta user feedback
-            were carried out.
+            <div>{t("roadMap.validationDescription")}</div>
             <div className={styles.barProgress}>
               <BarProgress perCent={10000} width={isMobile ? 280 : 550} />
             </div>
             <div className={styles.statusProgress}>
-              <div>Progress</div>
+              <div>{t("roadMap.progress")}</div>
               <div>100%</div>
             </div>
           </Col>
@@ -107,8 +106,8 @@ const Roadmap = () => {
               <BrowserView>
                 <div className={"d-flex p-3"}>
                   <div>
-                    <b>2022 - April</b>
-                    <div>MVP Launch</div>
+                    <b>{t("roadMap.20221ndSemester")}</b>
+                    <div>{t("roadMap.mvpLaunch")}</div>
                   </div>
                 </div>
               </BrowserView>
@@ -116,16 +115,15 @@ const Roadmap = () => {
           </Col>
           <Col xs={10} md={8} className={styles.roadMapDescriptionText}>
             <MobileView>
-              <b>2022 - April</b>
-              <div>MVP Launch</div>
+              <b>{t("roadMap.20221ndSemester")}</b>
+              <div>{t("roadMap.mvpLaunch")}</div>
             </MobileView>
-            Will be the launch of Iora Chain with multi-chain token bridge.
-            First integration using Binance Smart Chain
+            {t("roadMap.mvpLaunchDescription")}
             <div className={styles.barProgress}>
               <BarProgress perCent={200} width={isMobile ? 280 : 550} />
             </div>
             <div className={styles.statusProgress}>
-              <div>Progress</div>
+              <div>{t("roadMap.progress")}</div>
               <div>20%</div>
             </div>
           </Col>
@@ -137,8 +135,8 @@ const Roadmap = () => {
               <BrowserView>
                 <div className={"d-flex p-3"}>
                   <div>
-                    <b>2022 - May</b>
-                    <div>PIX Integrations</div>
+                    <b>{t("roadMap.20222ndSemester")}</b>
+                    <div>{t("roadMap.pixIntegration")}</div>
                   </div>
                 </div>
               </BrowserView>
@@ -146,16 +144,15 @@ const Roadmap = () => {
           </Col>
           <Col xs={10} md={8} className={styles.roadMapDescriptionText}>
             <MobileView>
-              <b>2022 - May</b>
-              <div>New feature</div>
+              <b>{t("roadMap.20222ndSemester")}</b>
+              <div>Iora Pay</div>
             </MobileView>
-            Iora Pay will be launched with PIX integrations. Users will be able
-            to transfer BRL from PIX to Metamask wallets
+            {t("roadMap.ioraPayDescription")}
             <div className={styles.barProgress}>
               <BarProgress perCent={200} width={isMobile ? 280 : 550} />
             </div>
             <div className={styles.statusProgress}>
-              <div>Progress</div>
+              <div>{t("roadMap.progress")}</div>
               <div>20%</div>
             </div>
           </Col>
@@ -167,8 +164,8 @@ const Roadmap = () => {
               <BrowserView>
                 <div className={"d-flex p-3"}>
                   <div>
-                    <b>2022 - Nov</b>
-                    <div>Ethereum Mainnet</div>
+                    <b>{t("roadMap.20231ndSemester")}</b>
+                    <div>{t("roadMap.ethereumMainNet")}</div>
                   </div>
                 </div>
               </BrowserView>
@@ -176,16 +173,15 @@ const Roadmap = () => {
           </Col>
           <Col xs={10} md={8} className={styles.roadMapDescriptionText}>
             <MobileView>
-              <b>2022 - Nov</b>
-              <div>Mobile Launch</div>
+              <b>{t("roadMap.20231ndSemester")}</b>
+              <div>{t("roadMap.ethereumMainNet")}</div>
             </MobileView>
-            Will be the launch of the mobile platform to integrate the live and
-            meetings service to the system.
+            {t("roadMap.ioraPayEthereumMainNet")}
             <div className={styles.barProgress}>
               <BarProgress perCent={0} width={isMobile ? 280 : 550} />
             </div>
             <div className={styles.statusProgress}>
-              <div>Progress</div>
+              <div>{t("roadMap.progress")}</div>
               <div>0%</div>
             </div>
           </Col>

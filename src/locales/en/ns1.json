@@ -42,5 +42,27 @@
   "status": {
     "planning": "PLANNING",
     "stage1": "STAGE 1"
+  },
+  "roadMap": {
+    "roadmap": "Roadmap",
+    "20202stSemester": "2020 - 2st Semester",
+    "20211stSemester": "2021 - 1st Semester",
+    "20212stSemester": "2021 - 2st Semester",
+    "20221ndSemester": "2022 - 1nd Semester",
+    "20222ndSemester": "2022 - 2nd Semester",
+    "20231ndSemester": "2023 - 1nd Semester",
+    "CDBCsDescription": "Marketing studies of CDBCs adaptations. Researching business modal and integrations from Brazil Central Bank",
+    "research": "Research",
+    "progress": "Progress",
+    "ethereumMainNet": "Ethereum Mainnet",
+    "validation": "Validation",
+    "mvpLaunch": "MVP Launch",
+    "pixIntegration": "PIX Integrations",
+    "investmentsHire": "Investments and Hires",
+    "investmentsHireDescription": "  Through personal private investment, materials and team were hired for studies and development of user experience, as well as the development of the Iora Pay.",
+    "validationDescription": "First user experience tests, market research, beta user feedback were carried out.",
+    "mvpLaunchDescription": "Will be the launched of Iora Chain with multi-chain token bridge. First integration using Binance Smart Chain",
+    "ioraPayDescription": "Iora Pay will be launched with PIX integrations. Users will be able to transfer BRL from PIX to Metamask wallets",
+    "ioraPayEthereumMainNet": "Iora Pay wil be integrated from Iora Chain, Binance Smart Chain and Ethereun Mainet using validators"
   }
 }
