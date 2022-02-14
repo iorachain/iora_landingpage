@@ -3,6 +3,7 @@ import styles from "./styles.module.scss";
 import Discord from "../../assets/imgs/discord.svg";
 import Github from "../../assets/imgs/github.svg";
 import { Image } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export const Community = () => {
   return (
@@ -13,6 +14,8 @@ export const Community = () => {
         <Button
           variant="contained"
           size="large"
+          href="https://discord.gg/9pCfzNwVRU"
+          target="_blank"
           startIcon={
             <Image height={30} src={Discord} alt="Enjoy our Discord" />
           }
@@ -26,6 +29,8 @@ export const Community = () => {
         <Button
           variant="contained"
           size="large"
+          href="https://github.com/iorachain/iora_landingpage"
+          target="_blank"
           className={styles.explorerButton}
           startIcon={<Image height={30} src={Github} alt="Enjoy our Github" />}
         >

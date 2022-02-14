@@ -29,8 +29,8 @@ const Roadmap = () => {
               <b>2021 - 1st Semester</b>
               <div>Research</div>
             </MobileView>
-            Market studies and adaptations of the model for contracting service
-            providers to smart contracts.
+            Marketing studies of CDBCs adaptations. Researching business modal
+            and integrations from Brazil Central Bank
             <div className={styles.barProgress}>
               <BarProgress perCent={10000} width={isMobile ? 280 : 550} />
             </div>
@@ -61,7 +61,7 @@ const Roadmap = () => {
             </MobileView>
             Through personal private investment, materials and team were hired
             for studies and development of user experience, as well as the
-            development of the Praora MVP.
+            development of the Iora Pay.
             <div className={styles.barProgress}>
               <BarProgress perCent={10000} width={isMobile ? 280 : 550} />
             </div>
@@ -120,14 +120,14 @@ const Roadmap = () => {
               <b>2022 - April</b>
               <div>MVP Launch</div>
             </MobileView>
-            Will be the launch of Praora MVP with multi-chain trades, login with
-            MetaMask or Wallet Connect.
+            Will be the launch of Iora Chain with multi-chain token bridge.
+            First integration using Binance Smart Chain
             <div className={styles.barProgress}>
-              <BarProgress perCent={10000} width={isMobile ? 280 : 550} />
+              <BarProgress perCent={200} width={isMobile ? 280 : 550} />
             </div>
             <div className={styles.statusProgress}>
               <div>Progress</div>
-              <div>100%</div>
+              <div>20%</div>
             </div>
           </Col>
         </Row>
@@ -139,7 +139,7 @@ const Roadmap = () => {
                 <div className={"d-flex p-3"}>
                   <div>
                     <b>2022 - May</b>
-                    <div>New feature</div>
+                    <div>PIX Integrations</div>
                   </div>
                 </div>
               </BrowserView>
@@ -150,14 +150,14 @@ const Roadmap = () => {
               <b>2022 - May</b>
               <div>New feature</div>
             </MobileView>
-            Praora Wallet will be launched, with Login authentication via QR
-            CODE, as well as encrypted live chat integrated into the system.
+            Iora Pay will be launched with PIX integrations. Users will be able
+            to transfer BRL from PIX to Metamask wallets
             <div className={styles.barProgress}>
-              <BarProgress perCent={10000} width={isMobile ? 280 : 550} />
+              <BarProgress perCent={200} width={isMobile ? 280 : 550} />
             </div>
             <div className={styles.statusProgress}>
               <div>Progress</div>
-              <div>100%</div>
+              <div>20%</div>
             </div>
           </Col>
         </Row>
@@ -169,7 +169,7 @@ const Roadmap = () => {
                 <div className={"d-flex p-3"}>
                   <div>
                     <b>2022 - Nov</b>
-                    <div>Mobile Launch</div>
+                    <div>Ethereum Mainnet</div>
                   </div>
                 </div>
               </BrowserView>
@@ -183,11 +183,11 @@ const Roadmap = () => {
             Will be the launch of the mobile platform to integrate the live and
             meetings service to the system.
             <div className={styles.barProgress}>
-              <BarProgress perCent={10000} width={isMobile ? 280 : 550} />
+              <BarProgress perCent={0} width={isMobile ? 280 : 550} />
             </div>
             <div className={styles.statusProgress}>
               <div>Progress</div>
-              <div>100%</div>
+              <div>0%</div>
             </div>
           </Col>
         </Row>
