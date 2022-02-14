@@ -64,5 +64,10 @@
     "mvpLaunchDescription": "Will be the launched of Iora Chain with multi-chain token bridge. First integration using Binance Smart Chain",
     "ioraPayDescription": "Iora Pay will be launched with PIX integrations. Users will be able to transfer BRL from PIX to Metamask wallets",
     "ioraPayEthereumMainNet": "Iora Pay wil be integrated from Iora Chain, Binance Smart Chain and Ethereun Mainet using validators"
+  },
+  "workingWIthUs": {
+    "enjoyOurTeam": "Enjoy our team",
+    "getStartedWorkingTogether": "GET STARTED WORKING TOGHETHER",
+    "getStarted": "GET STARTED"
   }
 }
