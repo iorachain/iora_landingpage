@@ -5,72 +5,73 @@ import Feature04 from "../../assets/imgs/list04.png";
 import { isMobile } from "react-device-detect";
 import { Image } from "react-bootstrap";
 import styles from "./style.module.scss";
+import { useTranslation } from "react-i18next";
 
 const Features = () => {
+  const { t } = useTranslation();
+
   return (
     <div id={styles.Features}>
-      <div className={styles.title}>Features</div>
+      <div className={styles.title}>{t("header.features")}</div>
       <div className={styles.listSection}>
         <div className={styles.listRow}>
           <Image
             height={isMobile ? 100 : 200}
             src={Feature01}
-            alt=" ETHEREUM CLIQUE UPGRADED FORK"
+            alt={t("features.ethereumFork")}
           />
           <div className={styles.listFeatures}>
             <div className={styles.featuresTitle}>
-              ETHEREUM CLIQUE UPGRADED FORK
+              {t("features.ethereumFork")}
             </div>
             <div className={styles.featuresSubTitle}>
-              Our development team are developing new features to adapt our
-              Latin american market. Fast and safe protocols.
+              {t("features.ethereumFork")}
             </div>
           </div>
         </div>
         <div className={styles.listRow}>
           <div className={styles.listFeatures}>
-            <div className={styles.featuresTitle}>BUILDING IN SOLIDITY</div>
+            <div className={styles.featuresTitle}>
+              {t("features.ethereumBuiltInSolidy")}
+            </div>
             <div className={styles.featuresSubTitle}>
-              We will support all smart contracts from Ethereum/Binance Smart
-              Chain
+              {t("features.ethereumBuiltInSolidyDescription")}
             </div>
           </div>
           <Image
             height={isMobile ? 100 : 200}
             src={Feature02}
-            alt="BUILDING IN SOLIDITY"
+            alt={t("features.ethereumBuiltInSolidy")}
           />
         </div>
         <div className={styles.listRow}>
           <Image
             height={isMobile ? 100 : 200}
             src={Feature03}
-            alt="LOOKING FOR CBDC INTEGRATIONS"
+            alt={t("features.CBDCIntegrations")}
           />
           <div className={styles.listFeatures}>
             <div className={styles.featuresTitle}>
-              LOOKING FOR CBDC INTEGRATIONS
+              {t("features.CBDCIntegrations")}S
             </div>
             <div className={styles.featuresSubTitle}>
-              IoraChain have been created to Latam market. All features is
-              focused on latin demand and also integrated for the CBDC.
+              {t("features.CBDCIntegrationsDescription")}
             </div>
           </div>
         </div>
         <div className={styles.listRow}>
           <div className={styles.listFeatures}>
             <div className={styles.featuresTitle}>
-              NFT&apos;s, LIVESTREAMING and METAVERSES
+              {t("features.NFTMetaverses")}
             </div>
             <div className={styles.featuresSubTitle}>
-              Iora chain has started a MVP process called IoraPay. Fast payment
-              system integrated from PIX (Brazillian system payment)
+              {t("features.NFTMetaversesDescriptions")}
             </div>
           </div>
           <Image
             height={isMobile ? 100 : 200}
             src={Feature04}
-            alt="   NFT's, LIVESTREAMING and METAVERSES"
+            alt={t("features.NFTMetaverses")}
           />
         </div>
       </div>

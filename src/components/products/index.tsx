@@ -6,8 +6,11 @@ import Line from "../../assets/imgs/line.svg";
 import Caldeus from "../../assets/imgs/caldeus.svg";
 import IoraPay from "../../assets/imgs/iorapay.svg";
 import { isMobile } from "react-device-detect";
+import { useTranslation } from "react-i18next";
 
 const Products = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <div id={styles.Products}>
@@ -17,28 +20,27 @@ const Products = () => {
             <span className={styles.productTitle}>IoraChain</span>
             <Image width={30} src={Line} alt="" />
             <span className={styles.productSubTitle}>
-              Blockchain for Latin Americans
+              {t("dapps.ioraChainTitle")}
             </span>
           </div>
           <div>
             <span className={styles.productDescription}>
-              Growing with fast and safe solutions. We created a Blockchain on
-              open source code, on LATAM market demand. Full integration with
-              FIAT/Crypto exchanges and creating every single day a new
-              environment to make Latam users life better.
+              {t("dapps.ioraChainDescription")}
             </span>
           </div>
           <Row className={styles.productColumns}>
             <Col>
-              <div>DEVELOPMENT PROCESS</div>
-              <div className={styles.productColumnSubTitle}>PLANNING</div>
+              <div>{t("dapps.developmentProcess")}</div>
+              <div className={styles.productColumnSubTitle}>
+                {t("status.planning")}
+              </div>
             </Col>
             <Col>
-              <div>TOTAL RAISED</div>
+              <div>{t("dapps.totalRaised")}</div>
               <div className={styles.productColumnSubTitle}>$ 0,00</div>
             </Col>
             <Col>
-              <div>MAIN GOAL</div>
+              <div>{t("dapps.mainGoal")}</div>
               <div className={styles.productColumnSubTitle}>$ 500.000</div>
             </Col>
           </Row>
@@ -49,28 +51,28 @@ const Products = () => {
           <div className={styles.productTitles}>
             <span className={styles.productTitle}>Praora</span>
             <Image width={30} src={Line} alt="" />
-            <span className={styles.productSubTitle}>Streaming Plataform</span>
+            <span className={styles.productSubTitle}>
+              {t("dapps.praoraTitle")}
+            </span>
           </div>
           <div>
             <span className={styles.productDescription}>
-              Praora is a <b>Streaming Plataform</b> which unifies all the
-              resources you need to manage your lives and keep track of your
-              cryptocurrencies earnings as a content producer. You can easily
-              start streaming, create sweepstakes for your followers and sell
-              digital products. <b>All in one place!</b>
+              {t("dapps.praoraDescription")}
             </span>
           </div>
           <Row className={styles.productColumns}>
             <Col>
-              <div>DEVELOPMENT PROCESS</div>
-              <div className={styles.productColumnSubTitle}>STAGE 1</div>
+              <div>{t("dapps.developmentProcess")}</div>
+              <div className={styles.productColumnSubTitle}>
+                {t("status.stage1")}
+              </div>
             </Col>
             <Col>
-              <div>TOTAL RAISED</div>
+              <div>{t("dapps.totalRaised")}</div>
               <div className={styles.productColumnSubTitle}>$ 28,110,63</div>
             </Col>
             <Col>
-              <div>MAIN GOAL</div>
+              <div>{t("dapps.mainGoal")}</div>
               <div className={styles.productColumnSubTitle}>$ 300.000</div>
             </Col>
           </Row>
@@ -83,26 +85,26 @@ const Products = () => {
           <div className={styles.productTitles}>
             <span className={styles.productTitle}>CALDEUS</span>
             <Image width={30} src={Line} alt="" />
-            <span className={styles.productSubTitle}>NFT Marketplace</span>
+            <span className={styles.productSubTitle}>
+              {t("dapps.caldeusTitle")}
+            </span>
           </div>
           <div>
             <span className={styles.productDescription}>
-              Caldeus is an NFT marketplace for videos, photos, images
-              collection arts. We built a space for visual artists from LATAM
-              under blockchain technology.
+              {t("dapps.caldeusDescription")}
             </span>
           </div>
           <Row className={styles.productColumns}>
             <Col>
-              <div>DEVELOPMENT PROCESS</div>
+              <div>{t("dapps.developmentProcess")}</div>
               <div className={styles.productColumnSubTitle}>PLANNING</div>
             </Col>
             <Col>
-              <div>TOTAL RAISED</div>
+              <div>{t("dapps.totalRaised")}</div>
               <div className={styles.productColumnSubTitle}>$ 0,00</div>
             </Col>
             <Col>
-              <div>MAIN GOAL</div>
+              <div>{t("dapps.mainGoal")}</div>
               <div className={styles.productColumnSubTitle}>$ 250.000</div>
             </Col>
           </Row>
@@ -114,29 +116,25 @@ const Products = () => {
             <span className={styles.productTitle}>IoraPay</span>
             <Image width={30} src={Line} alt="" />
             <span className={styles.productSubTitle}>
-              Self-custody payment system
+              {t("dapps.ioraPayTitle")}
             </span>
           </div>
           <div>
             <span className={styles.productDescription}>
-              IoraPay é um sistema de pagamento integrado ao PIX que possui a
-              funcionalidade de realizar pagamentos integrado a uma wallet
-              terceira, como Metamask e Truswallet. Com o IoraPay os usuários
-              podem realizar transações rápidas e simples diretamente para sua
-              carteira Metamask, sem passar por uma exchange centralizada.
+              {t("dapps.ioraPayDescription")}
             </span>
           </div>
           <Row className={styles.productColumns}>
             <Col>
-              <div>DEVELOPMENT PROCESS</div>
+              <div>{t("dapps.developmentProcess")}</div>
               <div className={styles.productColumnSubTitle}>STAGE 1</div>
             </Col>
             <Col>
-              <div>TOTAL RAISED</div>
+              <div>{t("dapps.totalRaised")}</div>
               <div className={styles.productColumnSubTitle}>$ 530</div>
             </Col>
             <Col>
-              <div>MAIN GOAL</div>
+              <div>{t("dapps.mainGoal")}</div>
               <div className={styles.productColumnSubTitle}>$ 200.000</div>
             </Col>
           </Row>

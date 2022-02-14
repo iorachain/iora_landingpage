@@ -15,5 +15,32 @@
     "ioraToken": "Iora Token",
     "explorer": "Explorer",
     "latam": "América Latina"
+  },
+  "features": {
+    "ethereumFork": "ETHEREUM CLIQUE UPGRADED FORK",
+    "ethereumForkDescription": "Our development team are developing new features to adapt our Latin american market. Fast and safe protocols.",
+    "ethereumBuiltInSolidy": "BUILDING IN SOLIDITY",
+    "ethereumBuiltInSolidyDescription": "We will support all smart contracts from Ethereum/Binance Smart Chain",
+    "CBDCIntegrations": "LOOKING FOR CBDC INTEGRATIONS",
+    "CBDCIntegrationsDescription": "IoraChain have been created to Latam market. All features is focused on latin demand and also integrated for the CBDC.",
+    "NFTMetaverses": "NFT&apos;s, LIVESTREAMING and METAVERSES",
+    "NFTMetaversesDescriptions": "Iora chain has started a MVP process called IoraPay. Fast payment system integrated from PIX (Brazillian system payment)"
+  },
+  "dapps": {
+    "ioraChainTitle": "Blockchain for Latin Americans",
+    "ioraChainDescription": "Growing with fast and safe solutions. We created a Blockchain on open source code, on LATAM market demand. Full integration with FIAT/Crypto exchanges and creating every single day a new  environment to make Latam users life better.",
+    "developmentProcess": "DEVELOPMENT PROCESS",
+    "totalRaised": "TOTAL RAISED",
+    "mainGoal": "MAIN GOA",
+    "praoraTitle": "Streaming Plataform",
+    "praoraDescription": "Praora is a streaming plataform which unifies all the resources you need to manage your lives and keep track of your cryptocurrencies earnings as a content producer. You can easily start streaming, create sweepstakes for your followers and sell digital products. All in one place!",
+    "caldeusTitle": "NFT MARKETPLACE",
+    "caldeusDescription": "Caldeus is an NFT marketplace for videos, photos, images collection arts. We built a space for visual artists from LATAM under blockchain technology.",
+    "ioraPayTitle": "Self-custody payment system",
+    "ioraPayDescription": "IoraPay is a payment system integrated into the Brazilian payment method called PIX, and also that has the functionality to make payments integrated into a wallet third, such as Metamask and Truswallet. With IoraPay users can perform quick and simple transactions directly to your Metamask wallet, without going through a centralized exchange."
+  },
+  "status": {
+    "planning": "PLANNING",
+    "stage1": "STAGE 1"
   }
 }
