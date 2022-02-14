@@ -4,17 +4,20 @@ import { Image } from "react-bootstrap";
 import styles from "./styles.module.scss";
 import Button from "@mui/material/Button";
 import { BrowserView, isMobile } from "react-device-detect";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <div id={styles.Hero}>
         <div className={styles.callToAction}>
-          <div className={styles.title}>Welcome Web 3.0</div>
+          <div className={styles.title}>{t("hero.welcome")}</div>
           <div className={styles.subtitle}>
-            First blockchain from LATAM.
+            {t("hero.firstLatam")}
             <br />
-            Welcome home
+            {t("hero.welcomeHome")}
           </div>
           <div className={styles.buttonArea}>
             <Button
@@ -22,20 +25,20 @@ const Hero = () => {
               size="large"
               className={styles.actionButton}
             >
-              IORA TOKEN
+              {t("hero.ioraToken")}
             </Button>
             <Button
               variant="contained"
               size="large"
               className={styles.explorerButton}
             >
-              Explorer
+              {t("hero.explorer")}
             </Button>
           </div>
         </div>
         <BrowserView>
           <div className={styles.latamImage}>
-            <Image height={500} src={Latam} alt="Latam" />
+            <Image height={500} src={Latam} alt={t("hero.latam")} />
           </div>
         </BrowserView>
       </div>

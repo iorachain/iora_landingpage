@@ -1,11 +1,11 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "baseUrl": "./src",
-    "rootDir": "./src",
-    "outDir": "./build",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "plugins": [{ "name": "typescript-plugin-css-modules" }],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -18,10 +18,11 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "strictNullChecks": false,
-    "downlevelIteration": true,
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["./src/**/*.ts", "./src/**/*.tsx"],
+  "include": [
+    "src"
+  ],
   "exclude": ["node_modules"]
 }

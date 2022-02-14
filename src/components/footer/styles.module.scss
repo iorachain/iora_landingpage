@@ -10,10 +10,10 @@
   align-items: center;
 
   @include xs {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
   }
 
   .logoTitle {
@@ -35,8 +35,8 @@
     align-items: center;
 
     @include xs {
-        justify-content: center;
-        flex-direction: column;
+      justify-content: center;
+      flex-direction: column;
     }
   }
 

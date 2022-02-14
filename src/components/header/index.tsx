@@ -3,8 +3,11 @@ import { Image, Navbar } from "react-bootstrap";
 import styles from "./styles.module.scss";
 import { BrowserView, MobileView } from "react-device-detect";
 import Menu from "../../assets/imgs/menu.svg";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
+  const { t } = useTranslation();
+
   return (
     <Navbar id={styles.Header}>
       <Navbar.Brand>
@@ -18,20 +21,20 @@ const Header = () => {
       <BrowserView>
         <div className={styles.navbarButtons}>
           <Navbar.Collapse className={styles.navbarLinks}>
-            <span>Features</span>
+            <span>{t("header.features")}</span>
             <span> • </span>
-            <span>Roadmap</span>
+            <span>{t("header.roadmap")}</span>
             <span> • </span>
-            <span>About us</span>
+            <span>{t("header.aboutUs")}</span>
             <span> • </span>
-            <span>Token Sale</span>
+            <span>{t("header.tokenSale")}</span>
             <span> • </span>
-            <span>Whitepaper</span>
+            <span>{t("header.whitepaper")}</span>
             <span> • </span>
-            <span>Dapps</span>
+            <span>{t("header.dapps")}</span>
           </Navbar.Collapse>
           <div className={styles.navbarTools}>
-            <div>Language</div>
+            <div>{t("header.dapps")}</div>
           </div>
         </div>
       </BrowserView>

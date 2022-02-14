@@ -1,7 +1,6 @@
 import styles from "./style.module.scss";
 import { Row, Col, Image } from "react-bootstrap";
 import ArrowUp from "../../assets/imgs/arrowUp.svg";
-import ArrowLine from "../../assets/imgs/arrowLine.svg";
 import BarProgress from "../UI/barProgress";
 import { isMobile, BrowserView, MobileView } from "react-device-detect";
 

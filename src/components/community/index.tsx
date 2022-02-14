@@ -3,14 +3,15 @@ import styles from "./styles.module.scss";
 import Discord from "../../assets/imgs/discord.svg";
 import Github from "../../assets/imgs/github.svg";
 import { Image } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
-export const Community = () => {
+export function Community() {
+  const [t] = useTranslation();
   return (
     <div id={styles.Community}>
       <div className={styles.titleCommunity}>Community</div>
       <div>
-        <span>For All</span>
+        <span>For all</span>
         <Button
           variant="contained"
           size="large"
@@ -39,6 +40,6 @@ export const Community = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Community;
