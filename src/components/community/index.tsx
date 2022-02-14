@@ -7,11 +7,12 @@ import { useTranslation } from "react-i18next";
 
 export function Community() {
   const [t] = useTranslation();
+
   return (
     <div id={styles.Community}>
       <div className={styles.titleCommunity}>Community</div>
       <div>
-        <span>For all</span>
+        <span>{t("community.forAll")}</span>
         <Button
           variant="contained"
           size="large"
@@ -26,7 +27,7 @@ export function Community() {
         </Button>
       </div>
       <div>
-        <span>For Developers</span>
+        <span>{t("community.forDevs")}</span>
         <Button
           variant="contained"
           size="large"

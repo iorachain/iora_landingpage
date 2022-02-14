@@ -2,8 +2,11 @@ import styles from "./styles.module.scss";
 import { Image, Row, Col, Container } from "react-bootstrap";
 import IoraChain from "../../assets/imgs/iorachain.svg";
 import { isMobile, BrowserView, MobileView } from "react-device-detect";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const [t] = useTranslation();
+
   return (
     <div id={styles.Footer}>
       <Container>
@@ -20,7 +23,7 @@ const Footer = () => {
               </span>
               <MobileView>
                 <span className={styles.logoSubTitle}>
-                  Blockchain for LATAM Users. Your new home.
+                  {t("dapps.ioraChainTitle")}
                 </span>
               </MobileView>
             </Col>
@@ -28,24 +31,24 @@ const Footer = () => {
               <BrowserView>
                 <div className={styles.footerDirection}>
                   <Col md={3} sm={12} className={styles.footerDapps}>
-                    <b>Dapps</b>
+                    <b>{t("footer.dapps")}</b>
                     <span>IoraPay</span>
                     <span>Praora</span>
                   </Col>
                   <Col md={3} className={styles.footerDocumentation}>
-                    <b>Documentations</b>
-                    <span>About Us</span>
-                    <span>Team</span>
-                    <span>Whitepaper</span>
+                    <b>{t("footer.documentations")}</b>
+                    <span>{t("footer.aboutUs")}</span>
+                    <span>{t("footer.team")}</span>
+                    <span>{t("footer.whitepaper")}</span>
                   </Col>
                   <Col md={3} className={styles.footerLinks}>
                     <b>Links</b>
-                    <span>Features</span>
-                    <span>Roadmap</span>
-                    <span>Token Sale</span>
+                    <span>{t("footer.features")}</span>
+                    <span>{t("footer.roadmap")}</span>
+                    <span>{t("footer.tokenSale")}</span>
                   </Col>
                   <Col md={3} className={styles.footerContactUs}>
-                    <b>Contact Us</b>
+                    <b>{t("footer.contactUs")}</b>
                     <span>Discord</span>
                     <span>Github</span>
                     <span>Linkedin</span>

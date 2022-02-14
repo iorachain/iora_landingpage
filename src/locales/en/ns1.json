@@ -14,7 +14,7 @@
     "welcomeHome": "Welcome home",
     "ioraToken": "Iora Token",
     "explorer": "Explorer",
-    "latam": "América Latina"
+    "latam": "LATAM"
   },
   "features": {
     "ethereumFork": "ETHEREUM CLIQUE UPGRADED FORK",
@@ -69,5 +69,22 @@
     "enjoyOurTeam": "Enjoy our team",
     "getStartedWorkingTogether": "GET STARTED WORKING TOGHETHER",
     "getStarted": "GET STARTED"
+  },
+  "community": {
+    "forAll": "For all",
+    "forDevs": "For developers"
+  },
+  "footer": {
+    "documentations": "Documentations",
+    "aboutUs": "About us",
+    "team": "Team",
+    "ioraPay": "Iora Pay",
+    "praora": "Praora",
+    "whitepaper": "Whitepaper",
+    "features": "Features",
+    "roadmap": "Roadmap",
+    "tokenSale": "Token Sale",
+    "contactUs": "Contact Us",
+    "dapps": "Dapps"
   }
 }
