@@ -11,6 +11,9 @@
   @include xs {
     height: 10vh;
     align-items: center;
+    justify-content: space-around;
+    padding-right: 30px;
+    padding-left: 30px;
   }
 
   .navbarBrand {
