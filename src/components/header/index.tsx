@@ -1,6 +1,6 @@
 import { useState } from "react";
 import IoraChain from "../../assets/imgs/iorachain.svg";
-import { Image, Navbar } from "react-bootstrap";
+import { Image, Navbar, Col, Row } from "react-bootstrap";
 import styles from "./styles.module.scss";
 import { BrowserView, MobileView } from "react-device-detect";
 import MenuToogle from "../../assets/imgs/menu.svg";
@@ -36,60 +36,67 @@ const Header = () => {
   };
 
   return (
-    <Navbar id={styles.Header}>
-      <Navbar.Brand>
-        <div className={styles.navbarBrand}>
-          <Image height={45} src={IoraChain} alt="Iora Chain" />
-          <span>
-            <b>iora</b>chain
-          </span>
-        </div>
-      </Navbar.Brand>
-      <BrowserView>
-        <div className={styles.navbarButtons}>
-          <Navbar.Collapse className={styles.navbarLinks}>
-            <span>{t("header.features")}</span>
-            <span> • </span>
-            <span>{t("header.roadmap")}</span>
-            <span> • </span>
-            <span>{t("header.aboutUs")}</span>
-            <span> • </span>
-            <span>{t("header.tokenSale")}</span>
-            <span> • </span>
-            <span>{t("header.whitepaper")}</span>
-            <span> • </span>
-            <span>{t("header.dapps")}</span>
-          </Navbar.Collapse>
-          <div className={styles.navbarTools}>
-            <div onClick={handleClick}>
-              <Image src={GlobalImg} height={30} />
-            </div>
-            <Menu
-              id="langMenu"
-              anchorEl={anchorEl}
-              open={open}
-              onClose={handleClose}
-              MenuListProps={{
-                "aria-labelledby": "langs-button",
-              }}
-            >
-              <MenuItem onClick={() => handleClose("en")}>
-                English (USA)
-              </MenuItem>
-              <MenuItem onClick={() => handleClose("ptBr")}>
-                Português (Brasil)
-              </MenuItem>
-              <MenuItem onClick={() => handleClose("esLatam")}>
-                Spanish (Latin America)
-              </MenuItem>
-            </Menu>
+    <Row>
+      <Navbar id={styles.Header}>
+        <Col md={2}>
+          <div className={styles.navbarBrand}>
+            <Image height={45} src={IoraChain} alt="Iora Chain" />
+            <span>
+              <b>iora</b>chain
+            </span>
           </div>
-        </div>
-      </BrowserView>
-      <MobileView>
-        <Image height={50} src={MenuToogle} alt="Menu" />
-      </MobileView>
-    </Navbar>
+        </Col>
+        <Col md={10}>
+          <BrowserView>
+            <div className={styles.navbarButtons}>
+              <div className={styles.navbarLinks}>
+                <span>{t("header.features")}</span>
+                <span> • </span>
+                <span>{t("header.roadmap")}</span>
+                <span> • </span>
+                <span>{t("header.aboutUs")}</span>
+                <span> • </span>
+                <span>{t("header.tokenSale")}</span>
+                <span> • </span>
+                <span>{t("header.whitepaper")}</span>
+                <span> • </span>
+                <span>{t("header.dapps")}</span>
+              </div>
+
+              <div className={styles.navbarTools}>
+                <div onClick={handleClick}>
+                  <Image src={GlobalImg} height={30} />
+                </div>
+                <Menu
+                  id="langMenu"
+                  anchorEl={anchorEl}
+                  open={open}
+                  onClose={handleClose}
+                  MenuListProps={{
+                    "aria-labelledby": "langs-button",
+                  }}
+                >
+                  <MenuItem onClick={() => handleClose("en")}>
+                    English (USA)
+                  </MenuItem>
+                  <MenuItem onClick={() => handleClose("ptBr")}>
+                    Português (Brasil)
+                  </MenuItem>
+                  <MenuItem onClick={() => handleClose("esLatam")}>
+                    Spanish (Latin America)
+                  </MenuItem>
+                </Menu>
+              </div>
+            </div>
+          </BrowserView>
+        </Col>
+        <MobileView>
+          <Col sm={4}>
+            <Image height={50} src={MenuToogle} alt="Menu" />
+          </Col>
+        </MobileView>
+      </Navbar>
+    </Row>
   );
 };
 

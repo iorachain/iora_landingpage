@@ -12,9 +12,9 @@ const Layout = () => {
       <section id={styles.Content}>
         <Outlet />
       </section>
-      <footer id={styles.Footer}>
+      <div id={styles.Footer}>
         <Footer />
-      </footer>
+      </div>
     </div>
   );
 };
