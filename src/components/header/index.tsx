@@ -7,23 +7,31 @@ import MenuToogle from "../../assets/imgs/menu.svg";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { useTranslation } from "react-i18next";
+import GlobalImg from "../../assets/imgs/globalFavicon.svg";
+import { useEffect } from "react";
 
 interface OnClicKEvent {
   currentTarget: unknown;
 }
 
 const Header = () => {
-  const [t, i18n] = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const [anchorEl, setAnchorEl] = useState(null);
+  const [lang, setLang] = useState("en");
+
   const open = Boolean(anchorEl);
 
   const handleClick = (event: OnClicKEvent) => {
     setAnchorEl(event.currentTarget);
   };
 
-  const handleClose = (lang: string) => {
+  useEffect(() => {
     i18n.changeLanguage(lang);
+  }, [lang]);
+
+  const handleClose = (lang: string) => {
+    setLang(lang);
     setAnchorEl(null);
   };
 
@@ -53,14 +61,16 @@ const Header = () => {
             <span>{t("header.dapps")}</span>
           </Navbar.Collapse>
           <div className={styles.navbarTools}>
-            <div onClick={handleClick}>{t("header.language")}</div>
+            <div onClick={handleClick}>
+              <Image src={GlobalImg} height={30} />
+            </div>
             <Menu
               id="langMenu"
               anchorEl={anchorEl}
               open={open}
               onClose={handleClose}
               MenuListProps={{
-                "aria-labelledby": "basic-button",
+                "aria-labelledby": "langs-button",
               }}
             >
               <MenuItem onClick={() => handleClose("en")}>
