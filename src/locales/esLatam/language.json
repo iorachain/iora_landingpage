@@ -1,0 +1,90 @@
+{
+  "header": {
+    "features": "Features",
+    "roadmap": "Roadmap",
+    "aboutUs": "About us",
+    "tokenSale": "Token Sale",
+    "whitepaper": "Whitepaper",
+    "dapps": "Dapps",
+    "language": "Language"
+  },
+  "hero": {
+    "welcome": "Welcome Web 3.0",
+    "firstLatam": "First blockchain from LATAM.",
+    "welcomeHome": "Welcome home",
+    "ioraToken": "Iora Token",
+    "explorer": "Explorer",
+    "latam": "LATAM"
+  },
+  "features": {
+    "ethereumFork": "ETHEREUM CLIQUE UPGRADED FORK",
+    "ethereumForkDescription": "Our development team are developing new features to adapt our Latin american market. Fast and safe protocols.",
+    "ethereumBuiltInSolidy": "BUILDING IN SOLIDITY",
+    "ethereumBuiltInSolidyDescription": "We will support all smart contracts from Ethereum/Binance Smart Chain",
+    "CBDCIntegrations": "LOOKING FOR CBDC INTEGRATIONS",
+    "CBDCIntegrationsDescription": "IoraChain have been created to Latam market. All features is focused on latin demand and also integrated for the CBDC.",
+    "NFTMetaverses": "NFT&apos;s, LIVESTREAMING and METAVERSES",
+    "NFTMetaversesDescriptions": "Iora chain has started a MVP process called IoraPay. Fast payment system integrated from PIX (Brazillian system payment)"
+  },
+  "dapps": {
+    "ioraChainTitle": "Blockchain for Latin Americans",
+    "ioraChainDescription": "Growing with fast and safe solutions. We created a Blockchain on open source code, on LATAM market demand. Full integration with FIAT/Crypto exchanges and creating every single day a new  environment to make Latam users life better.",
+    "developmentProcess": "DEVELOPMENT PROCESS",
+    "totalRaised": "TOTAL RAISED",
+    "mainGoal": "MAIN GOA",
+    "praoraTitle": "Streaming Plataform",
+    "praoraDescription": "Praora is a streaming plataform which unifies all the resources you need to manage your lives and keep track of your cryptocurrencies earnings as a content producer. You can easily start streaming, create sweepstakes for your followers and sell digital products. All in one place!",
+    "caldeusTitle": "NFT MARKETPLACE",
+    "caldeusDescription": "Caldeus is an NFT marketplace for videos, photos, images collection arts. We built a space for visual artists from LATAM under blockchain technology.",
+    "ioraPayTitle": "Self-custody payment system",
+    "ioraPayDescription": "IoraPay is a payment system integrated into the Brazilian payment method called PIX, and also that has the functionality to make payments integrated into a wallet third, such as Metamask and Truswallet. With IoraPay users can perform quick and simple transactions directly to your Metamask wallet, without going through a centralized exchange."
+  },
+  "status": {
+    "planning": "PLANNING",
+    "stage1": "STAGE 1"
+  },
+  "roadMap": {
+    "roadmap": "Roadmap",
+    "20202stSemester": "2020 - 2st Semester",
+    "20211stSemester": "2021 - 1st Semester",
+    "20212stSemester": "2021 - 2st Semester",
+    "20221ndSemester": "2022 - 1nd Semester",
+    "20222ndSemester": "2022 - 2nd Semester",
+    "20231ndSemester": "2023 - 1nd Semester",
+    "CDBCsDescription": "Marketing studies of CDBCs adaptations. Researching business modal and integrations from Brazil Central Bank",
+    "research": "Research",
+    "progress": "Progress",
+    "ethereumMainNet": "Ethereum Mainnet",
+    "validation": "Validation",
+    "mvpLaunch": "MVP Launch",
+    "pixIntegration": "PIX Integrations",
+    "investmentsHire": "Investments and Hires",
+    "investmentsHireDescription": "  Through personal private investment, materials and team were hired for studies and development of user experience, as well as the development of the Iora Pay.",
+    "validationDescription": "First user experience tests, market research, beta user feedback were carried out.",
+    "mvpLaunchDescription": "Will be the launched of Iora Chain with multi-chain token bridge. First integration using Binance Smart Chain",
+    "ioraPayDescription": "Iora Pay will be launched with PIX integrations. Users will be able to transfer BRL from PIX to Metamask wallets",
+    "ioraPayEthereumMainNet": "Iora Pay wil be integrated from Iora Chain, Binance Smart Chain and Ethereun Mainet using validators"
+  },
+  "workingWIthUs": {
+    "enjoyOurTeam": "Enjoy our team",
+    "getStartedWorkingTogether": "GET STARTED WORKING TOGHETHER",
+    "getStarted": "GET STARTED"
+  },
+  "community": {
+    "forAll": "For all",
+    "forDevs": "For developers"
+  },
+  "footer": {
+    "documentations": "Documentations",
+    "aboutUs": "About us",
+    "team": "Team",
+    "ioraPay": "Iora Pay",
+    "praora": "Praora",
+    "whitepaper": "Whitepaper",
+    "features": "Features",
+    "roadmap": "Roadmap",
+    "tokenSale": "Token Sale",
+    "contactUs": "Contact Us",
+    "dapps": "Dapps"
+  }
+}
