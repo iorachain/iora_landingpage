@@ -18,7 +18,7 @@ const Header = () => {
   const { t, i18n } = useTranslation();
 
   const [anchorEl, setAnchorEl] = useState(null);
-  const [lang, setLang] = useState("en");
+  const [lang, setLang] = useState("");
 
   const open = Boolean(anchorEl);
 

@@ -5,21 +5,27 @@ import ptBr from "./locales/ptBR/language.json";
 import esLatam from "./locales/esLatam/language.json";
 import detector from "i18next-browser-languagedetector";
 
-export const defaultNS = "en";
+export const defaultNS = "ptBr";
 export const resources = {
   en: {
-    en,
+    translation: en,
   },
   ptBr: {
-    ptBr,
+    translation: ptBr,
   },
   esLatam: {
-    esLatam,
+    translation: esLatam,
   },
-} as const;
+};
 
-i18n.use(detector).use(initReactI18next).init({
-  fallbackLng: "en",
-  resources,
-  defaultNS,
-});
+i18n
+  .use(detector)
+  .use(initReactI18next)
+  .init({
+    lng: "ptBr",
+    fallbackLng: "en",
+    resources,
+    interpolation: {
+      escapeValue: false,
+    },
+  });

@@ -25,7 +25,7 @@ const Features = () => {
               {t("features.ethereumFork")}
             </div>
             <div className={styles.featuresSubTitle}>
-              {t("features.ethereumFork")}
+              {t("features.ethereumForkDescription")}
             </div>
           </div>
         </div>
@@ -52,7 +52,7 @@ const Features = () => {
           />
           <div className={styles.listFeatures}>
             <div className={styles.featuresTitle}>
-              {t("features.CBDCIntegrations")}S
+              {t("features.CBDCIntegrations")}
             </div>
             <div className={styles.featuresSubTitle}>
               {t("features.CBDCIntegrationsDescription")}
