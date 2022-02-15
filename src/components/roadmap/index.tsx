@@ -15,7 +15,7 @@ const Roadmap = () => {
         <Row className={styles.titleRow}>
           <Col xs={2} md={4} className={styles.roadMapLine}>
             <div className={styles.roadMapDescription}>
-              <Image src={ArrowUp} alt="Arrow Up" width={isMobile && 30} />
+              <Image src={ArrowUp} alt="Arrow Up" width={isMobile ? 30 : ""} />
               <BrowserView>
                 <div className={"d-flex p-3"}>
                   <div>
@@ -44,7 +44,7 @@ const Roadmap = () => {
         <Row>
           <Col xs={2} md={4} className={styles.roadMapLine}>
             <div className={styles.roadMapDescription}>
-              <Image src={ArrowUp} alt="Arrow Up" width={isMobile && 30} />
+              <Image src={ArrowUp} alt="Arrow Up" width={isMobile ? 30 : ""} />
               <BrowserView>
                 <div className={"d-flex p-3"}>
                   <div>
@@ -73,7 +73,7 @@ const Roadmap = () => {
         <Row>
           <Col xs={2} md={4} className={styles.roadMapLine}>
             <div className={styles.roadMapDescription}>
-              <Image src={ArrowUp} alt="Arrow Up" width={isMobile && 30} />
+              <Image src={ArrowUp} alt="Arrow Up" width={isMobile ? 30 : ""} />
               <BrowserView>
                 <div className={"d-flex p-3"}>
                   <div>
@@ -102,7 +102,7 @@ const Roadmap = () => {
         <Row>
           <Col xs={2} md={4} className={styles.roadMapLine}>
             <div className={styles.roadMapDescription}>
-              <Image src={ArrowUp} alt="Arrow Up" width={isMobile && 30} />
+              <Image src={ArrowUp} alt="Arrow Up" width={isMobile ? 30 : ""} />
               <BrowserView>
                 <div className={"d-flex p-3"}>
                   <div>
@@ -131,7 +131,7 @@ const Roadmap = () => {
         <Row>
           <Col xs={2} md={4} className={styles.roadMapLine}>
             <div className={styles.roadMapDescription}>
-              <Image src={ArrowUp} alt="Arrow Up" width={isMobile && 30} />
+              <Image src={ArrowUp} alt="Arrow Up" width={isMobile ? 30 : ""} />
               <BrowserView>
                 <div className={"d-flex p-3"}>
                   <div>
@@ -160,7 +160,7 @@ const Roadmap = () => {
         <Row>
           <Col xs={2} md={4} className={styles.roadMapLine}>
             <div className={styles.roadMapDescription}>
-              <Image src={ArrowUp} alt="Arrow Up" width={isMobile && 30} />
+              <Image src={ArrowUp} alt="Arrow Up" width={isMobile ? 30 : ""} />
               <BrowserView>
                 <div className={"d-flex p-3"}>
                   <div>
