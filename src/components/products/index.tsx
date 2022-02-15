@@ -12,7 +12,7 @@ const Products = () => {
   const { t } = useTranslation();
 
   return (
-    <>
+    <section id="ProductsSection">
       <div id={styles.Products}>
         <Image height={isMobile ? 150 : 300} src={IoraChain} alt="Iora Chain" />
         <div className={styles.productContainer}>
@@ -141,7 +141,7 @@ const Products = () => {
         </div>
         <Image height={isMobile ? 150 : 300} src={IoraPay} alt="IoraPay" />
       </div>
-    </>
+    </section>
   );
 };
 

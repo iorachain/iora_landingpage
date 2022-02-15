@@ -11,71 +11,73 @@ const Features = () => {
   const { t } = useTranslation();
 
   return (
-    <div id={styles.Features}>
-      <div className={styles.title}>{t("header.features")}</div>
-      <div className={styles.listSection}>
-        <div className={styles.listRow}>
-          <Image
-            height={isMobile ? 100 : 200}
-            src={Feature01}
-            alt={t("features.ethereumFork")}
-          />
-          <div className={styles.listFeatures}>
-            <div className={styles.featuresTitle}>
-              {t("features.ethereumFork")}
-            </div>
-            <div className={styles.featuresSubTitle}>
-              {t("features.ethereumForkDescription")}
-            </div>
-          </div>
-        </div>
-        <div className={styles.listRow}>
-          <div className={styles.listFeatures}>
-            <div className={styles.featuresTitle}>
-              {t("features.ethereumBuiltInSolidy")}
-            </div>
-            <div className={styles.featuresSubTitle}>
-              {t("features.ethereumBuiltInSolidyDescription")}
+    <section id="FeaturesSection">
+      <div id={styles.Features}>
+        <div className={styles.title}>{t("header.features")}</div>
+        <div className={styles.listSection}>
+          <div className={styles.listRow}>
+            <Image
+              height={isMobile ? 100 : 200}
+              src={Feature01}
+              alt={t("features.ethereumFork")}
+            />
+            <div className={styles.listFeatures}>
+              <div className={styles.featuresTitle}>
+                {t("features.ethereumFork")}
+              </div>
+              <div className={styles.featuresSubTitle}>
+                {t("features.ethereumForkDescription")}
+              </div>
             </div>
           </div>
-          <Image
-            height={isMobile ? 100 : 200}
-            src={Feature02}
-            alt={t("features.ethereumBuiltInSolidy")}
-          />
-        </div>
-        <div className={styles.listRow}>
-          <Image
-            height={isMobile ? 100 : 200}
-            src={Feature03}
-            alt={t("features.CBDCIntegrations")}
-          />
-          <div className={styles.listFeatures}>
-            <div className={styles.featuresTitle}>
-              {t("features.CBDCIntegrations")}
+          <div className={styles.listRow}>
+            <div className={styles.listFeatures}>
+              <div className={styles.featuresTitle}>
+                {t("features.ethereumBuiltInSolidy")}
+              </div>
+              <div className={styles.featuresSubTitle}>
+                {t("features.ethereumBuiltInSolidyDescription")}
+              </div>
             </div>
-            <div className={styles.featuresSubTitle}>
-              {t("features.CBDCIntegrationsDescription")}
+            <Image
+              height={isMobile ? 100 : 200}
+              src={Feature02}
+              alt={t("features.ethereumBuiltInSolidy")}
+            />
+          </div>
+          <div className={styles.listRow}>
+            <Image
+              height={isMobile ? 100 : 200}
+              src={Feature03}
+              alt={t("features.CBDCIntegrations")}
+            />
+            <div className={styles.listFeatures}>
+              <div className={styles.featuresTitle}>
+                {t("features.CBDCIntegrations")}
+              </div>
+              <div className={styles.featuresSubTitle}>
+                {t("features.CBDCIntegrationsDescription")}
+              </div>
             </div>
           </div>
-        </div>
-        <div className={styles.listRow}>
-          <div className={styles.listFeatures}>
-            <div className={styles.featuresTitle}>
-              {t("features.NFTMetaverses")}
+          <div className={styles.listRow}>
+            <div className={styles.listFeatures}>
+              <div className={styles.featuresTitle}>
+                {t("features.NFTMetaverses")}
+              </div>
+              <div className={styles.featuresSubTitle}>
+                {t("features.NFTMetaversesDescriptions")}
+              </div>
             </div>
-            <div className={styles.featuresSubTitle}>
-              {t("features.NFTMetaversesDescriptions")}
-            </div>
+            <Image
+              height={isMobile ? 100 : 200}
+              src={Feature04}
+              alt={t("features.NFTMetaverses")}
+            />
           </div>
-          <Image
-            height={isMobile ? 100 : 200}
-            src={Feature04}
-            alt={t("features.NFTMetaverses")}
-          />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

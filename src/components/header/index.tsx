@@ -9,6 +9,7 @@ import MenuItem from "@mui/material/MenuItem";
 import { useTranslation } from "react-i18next";
 import GlobalImg from "../../assets/imgs/globalFavicon.svg";
 import { useEffect } from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 interface OnClicKEvent {
   currentTarget: unknown;
@@ -50,17 +51,41 @@ const Header = () => {
           <BrowserView>
             <div className={styles.navbarButtons}>
               <div className={styles.navbarLinks}>
-                <span>{t("header.features")}</span>
+                <Link
+                  to="FeaturesSection"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  <span>{t("header.features")}</span>
+                </Link>
                 <span> • </span>
-                <span>{t("header.roadmap")}</span>
+                <Link
+                  to="ProductsSection"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  <span>{t("header.dapps")}</span>
+                </Link>
                 <span> • </span>
-                <span>{t("header.aboutUs")}</span>
+                <Link
+                  to="RoadmapSection"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  <span>{t("header.roadmap")}</span>
+                </Link>
                 <span> • </span>
                 <span>{t("header.tokenSale")}</span>
                 <span> • </span>
                 <span>{t("header.whitepaper")}</span>
                 <span> • </span>
-                <span>{t("header.dapps")}</span>
+                <span>{t("header.aboutUs")}</span>
               </div>
 
               <div className={styles.navbarTools}>
