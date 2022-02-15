@@ -1,17 +1,24 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import ns1 from "./locales/en/language.json";
+import en from "./locales/en/language.json";
+import ptBR from "./locales/ptBR/language.json";
+import esLatam from "./locales/esLatam/language.json";
 
-export const defaultNS = "ns1";
+export const defaultNS = "en";
 export const resources = {
   en: {
-    ns1,
+    en,
+  },
+  ptBr: {
+    ptBR,
+  },
+  esLatam: {
+    esLatam,
   },
 } as const;
 
 i18n.use(initReactI18next).init({
   lng: "en",
-  ns: ["ns1"],
-  defaultNS,
   resources,
+  defaultNS,
 });
