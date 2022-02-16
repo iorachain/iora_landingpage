@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import IoraChain from "../../assets/imgs/iorachain.svg";
 import { Image, Navbar, Col, Row } from "react-bootstrap";
 import styles from "./styles.module.scss";
@@ -10,6 +10,9 @@ import { useTranslation } from "react-i18next";
 import GlobalImg from "../../assets/imgs/globalFavicon.svg";
 import { useEffect } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
+import Box from "@mui/material/Box";
+import Modal from "@mui/material/Modal";
+import MenuContainer from "../menuMobile";
 
 interface OnClicKEvent {
   currentTarget: unknown;
@@ -34,6 +37,28 @@ const Header = () => {
   const handleClose = (lang: string) => {
     setLang(lang);
     setAnchorEl(null);
+  };
+
+  const [openModal, setOpen] = useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setOpen(false);
+  };
+
+  const style = {
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    width: "100vw",
+    bgcolor: "background.paper",
+    border: "0",
+    boxShadow: 24,
+    p: 4,
   };
 
   return (
@@ -117,7 +142,19 @@ const Header = () => {
         </Col>
         <MobileView>
           <Col sm={4}>
-            <Image height={50} src={MenuToogle} alt="Menu" />
+            <div onClick={handleClickOpen}>
+              <Image height={50} src={MenuToogle} alt="Menu" />
+            </div>
+            <Modal
+              open={openModal}
+              onClose={handleCloseModal}
+              aria-labelledby="modal-modal-title"
+              aria-describedby="modal-modal-description"
+            >
+              <Box sx={style}>
+                <MenuContainer />
+              </Box>
+            </Modal>
           </Col>
         </MobileView>
       </Navbar>

@@ -1,0 +1,45 @@
+@import "../../styles/global.scss";
+
+#MenuMobile {
+  display: flex;
+  flex-direction: column;
+
+  span,
+  a {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .closeMenu {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+#SelectLanguages {
+  :first-child{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    box-shadow: none !important;
+  }
+}
+
+.flagsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    text-align: center;
+  }
+}
