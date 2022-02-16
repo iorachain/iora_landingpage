@@ -11,7 +11,6 @@ import BrazilFlag from "../../assets/imgs/br_flag.png";
 import USAFlag from "../../assets/imgs/usa_flag.png";
 import LatamFlag from "../../assets/imgs/latam_flag.png";
 import { Image } from "react-bootstrap";
-import CloseIcon from "../../assets/imgs/close.png";
 
 const MenuMobile = () => {
   const { t, i18n } = useTranslation();
@@ -28,9 +27,6 @@ const MenuMobile = () => {
   return (
     <>
       <div id={styles.MenuMobile}>
-        <div className={styles.closeMenu}>
-          <Image src={CloseIcon} width={50} alt="Close" />
-        </div>
         <Link
           to="FeaturesSection"
           spy={true}
