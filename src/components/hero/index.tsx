@@ -31,6 +31,7 @@ const Hero = () => {
               variant="contained"
               size="large"
               className={styles.explorerButton}
+              href="https://explorer.iorachain.com"
             >
               {t("hero.explorer")}
             </Button>
