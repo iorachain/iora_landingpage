@@ -87,16 +87,6 @@ const Header = () => {
                 </Link>
                 <span> • </span>
                 <Link
-                  to="ProductsSection"
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                >
-                  <span>{t("header.dapps")}</span>
-                </Link>
-                <span> • </span>
-                <Link
                   to="RoadmapSection"
                   spy={true}
                   smooth={true}
