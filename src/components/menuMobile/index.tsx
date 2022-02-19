@@ -37,15 +37,6 @@ const MenuMobile = () => {
           <span>{t("header.features")}</span>
         </Link>
         <Link
-          to="ProductsSection"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-        >
-          <span>{t("header.dapps")}</span>
-        </Link>
-        <Link
           to="RoadmapSection"
           spy={true}
           smooth={true}
