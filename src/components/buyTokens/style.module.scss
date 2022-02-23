@@ -1,0 +1,87 @@
+@import "../../styles/global.scss";
+
+#BuyTokens {
+  width: 100vw;
+  padding: 20vh 6vw;
+
+  @include xs {
+    margin: 4vh 2vw;
+  }
+
+  .titleTokens {
+    display: flex;
+    justify-content: flex-start;
+    color: $navy;
+    font-family: Manrope;
+    text-transform: uppercase;
+    font-size: 42px;
+    line-height: 66px;
+    font-weight: 800;
+    margin-right: 10px;
+    text-shadow: 0.5px 1px 2px $black;
+    margin: 5vh auto;
+
+    @include xs {
+      font-size: 30px;
+    }
+  }
+
+  .subtitleTokens {
+    font-size: 28px;
+    text-transform: uppercase;
+  }
+
+  .tokenColumn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @include xs {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .infoTokens {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .descriptionTokenColumn {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .buyTokensImage {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    @include xs {
+      margin-top: 10px;
+    }
+  }
+
+  .descriptionTokens {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    @include xs {
+      margin-top: 20px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .actionButton {
+    background: $grayLight;
+    color: $navy;
+    padding: 15px 40px;
+    font-size: 20px;
+    font-weight: 800;
+    a :hover {
+      background: lighten($grayLight, 50%);
+    }
+  }
+}

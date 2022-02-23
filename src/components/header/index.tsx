@@ -13,6 +13,7 @@ import { Link } from "react-scroll";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import MenuContainer from "../menuMobile";
+import Button from "@mui/material/Button";
 
 interface OnClicKEvent {
   currentTarget: unknown;
@@ -96,11 +97,25 @@ const Header = () => {
                   <span>{t("header.roadmap")}</span>
                 </Link>
                 <span> • </span>
-                <span>{t("header.tokenSale")}</span>
+                <span>
+                  <Button
+                    variant="text"
+                    className={styles.btnLinks}
+                    href="https://forms.gle/ErD6n5i9YuQ6m3JC6"
+                  >
+                    <span>{t("header.tokenSale")}</span>
+                  </Button>
+                </span>
                 <span> • </span>
-                <span>{t("header.whitepaper")}</span>
-                <span> • </span>
-                <span>{t("header.aboutUs")}</span>
+                <span>
+                  <Button
+                    variant="text"
+                    className={styles.btnLinks}
+                    href="https://docs.iorachain.com"
+                  >
+                    <span>{t("header.whitepaper")}</span>
+                  </Button>
+                </span>
               </div>
 
               <div className={styles.navbarTools}>

@@ -94,5 +94,11 @@
     "filLGoogleForm": " Preencha o formulário no Google Form para enviarmos IORAS para sua wallet.",
     "discord": "Discord",
     "fillForm": "Preencher"
+  },
+  "buyTokens": {
+    "buyIora": "Compra IORA Tokens",
+    "preSaleFunding": "Pré-venda",
+    "areYou": "Você está interessado em investir na IORA? Por favor, preencha esse formulário e",
+    "bePart": "faça parte dessa revolução Latina."
   }
 }

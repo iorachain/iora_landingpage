@@ -72,7 +72,7 @@ const Footer = () => {
                       <Button
                         variant="text"
                         className={styles.btnLinks}
-                        href="https://mpago.la/2bKn9Ez"
+                        href="https://forms.gle/ErD6n5i9YuQ6m3JC6"
                       >
                         <span>{t("header.tokenSale")}</span>
                       </Button>

@@ -3,6 +3,7 @@ import Features from "../../components/features";
 import Roadmap from "../../components/roadmap";
 import WorkWithUs from "../../components/workWithUs";
 import Community from "../../components/community";
+import BuyTokens from "../../components/buyTokens";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Features />
       <Roadmap />
       <WorkWithUs />
+      <BuyTokens />
       <Community />
     </div>
   );
