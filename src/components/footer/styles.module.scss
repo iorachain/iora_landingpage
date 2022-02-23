@@ -74,6 +74,11 @@
     align-items: center;
   }
 
+  .btnCursor {
+    color: $white;
+    cursor: pointer;
+  }
+
   .btnLinks {
     color: $white;
     font-size: 12px;
@@ -81,6 +86,7 @@
     padding: 0;
     text-transform: capitalize;
   }
+
   .footerDirection {
     display: flex;
     flex-direction: row;

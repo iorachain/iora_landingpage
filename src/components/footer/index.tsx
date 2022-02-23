@@ -4,7 +4,7 @@ import IoraChain from "../../assets/imgs/iorachain.svg";
 import { isMobile, BrowserView, MobileView } from "react-device-detect";
 import { useTranslation } from "react-i18next";
 import { Button } from "@material-ui/core";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 const Footer = () => {
   const [t] = useTranslation();
@@ -48,17 +48,35 @@ const Footer = () => {
                   </Col>
                   <Col md={4} className={styles.footerLinks}>
                     <b>Links</b>
-                    <span>{t("footer.features")}</span>
+                    <Link
+                      to="FeaturesSection"
+                      spy={true}
+                      smooth={true}
+                      offset={-70}
+                      duration={500}
+                      className={styles.btnCursor}
+                    >
+                      <span>{t("header.features")}</span>
+                    </Link>
                     <Link
                       to="RoadmapSection"
                       spy={true}
                       smooth={true}
                       offset={-70}
                       duration={500}
+                      className={styles.btnCursor}
                     >
                       <span>{t("header.roadmap")}</span>
                     </Link>
-                    <span>{t("footer.tokenSale")}</span>
+                    <span>
+                      <Button
+                        variant="text"
+                        className={styles.btnLinks}
+                        href="https://mpago.la/2bKn9Ez"
+                      >
+                        <span>{t("header.tokenSale")}</span>
+                      </Button>
+                    </span>
                   </Col>
                   <Col md={4} className={styles.footerContactUs}>
                     <b>{t("footer.contactUs")}</b>

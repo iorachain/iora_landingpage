@@ -9,7 +9,7 @@ import MenuItem from "@mui/material/MenuItem";
 import { useTranslation } from "react-i18next";
 import GlobalImg from "../../assets/imgs/globalFavicon.svg";
 import { useEffect } from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import MenuContainer from "../menuMobile";
