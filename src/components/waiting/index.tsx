@@ -11,14 +11,10 @@ const Waiting = () => {
   return (
     <>
       <div id={styles.Waiting}>
-        <Image height={200} src={Astronault} alt="Waiting Process" />
+        <Image height={300} src={Astronault} alt="Waiting Process" />
         <div className={styles.columnItems}>
-          <div className={styles.title}>Atenção</div>
-          <div className={styles.subtitle}>
-            Processando o pagamento <br />
-            Entre no nosso Discord e informe sua wallet na Binance Smart Chain
-            (BSC)
-          </div>
+          <div className={styles.title}>{t("dialog.paymentProcess")}</div>
+          <div className={styles.subtitle}>{t("dialog.joinDiscord")}</div>
         </div>
         <div className={styles.areaButton}>
           <Button
@@ -31,7 +27,7 @@ const Waiting = () => {
             }
             className={styles.actionButton}
           >
-            Discord
+            {t("dialog.discord")}
           </Button>
         </div>
       </div>

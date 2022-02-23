@@ -86,5 +86,13 @@
     "tokenSale": "Venda do Token",
     "contactUs": "Contato",
     "dapps": "Dapps"
+  },
+  "dialog": {
+    "paymentProcess": "Processando o pagamento",
+    "joinDiscord": "Entre no nosso Discord e participe das discurssões sobre o projeto.",
+    "successfulPayment": "Seu pagamento foi processado",
+    "filLGoogleForm": " Preencha o formulário no Google Form para enviarmos IORAS para sua wallet.",
+    "discord": "Discord",
+    "fillForm": "Preencher"
   }
 }

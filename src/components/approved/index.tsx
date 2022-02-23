@@ -1,6 +1,6 @@
 import styles from "./styles.module.scss";
 import { useTranslation } from "react-i18next";
-import Astronault from "../../assets/imgs/astronault.svg";
+import CashIn from "../../assets/imgs/cashin.svg";
 import { Image } from "react-bootstrap";
 import Button from "@mui/material/Button";
 import GoogleForm from "../../assets/imgs/googleForm.svg";
@@ -11,27 +11,23 @@ const Waiting = () => {
   return (
     <>
       <div id={styles.Waiting}>
-        <Image height={200} src={Astronault} alt="Waiting Process" />
+        <Image height={300} src={CashIn} alt="Process Approved" />
         <div className={styles.columnItems}>
-          <div className={styles.title}>Atenção</div>
-          <div className={styles.subtitle}>
-            Por favor, caso você já tenha realizado o pagamento. <br />
-            Entre no nosso Discord e informe sua wallet na Binance Smart Chain
-            (BSC)
-          </div>
+          <div className={styles.title}>{t("dialog.successfulPayment")}</div>
+          <div className={styles.subtitle}>{t("dialog.filLGoogleForm")}</div>
         </div>
         <div className={styles.areaButton}>
           <Button
             variant="contained"
             size="large"
-            href="https://discord.gg/9pCfzNwVRU"
+            href="https://forms.gle/ErD6n5i9YuQ6m3JC6"
             target="_blank"
             startIcon={
-              <Image height={30} src={GoogleForm} alt="Enjoy our Discord" />
+              <Image height={30} src={GoogleForm} alt={t("dialog.fillForm")} />
             }
             className={styles.actionButton}
           >
-            Form
+            {t("dialog.fillForm")}
           </Button>
         </div>
       </div>

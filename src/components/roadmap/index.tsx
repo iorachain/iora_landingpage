@@ -104,11 +104,11 @@ const Roadmap = () => {
               </MobileView>
               <div>{t("roadMap.validationDescription")}</div>
               <div className={styles.barProgress}>
-                <BarProgress perCent={10000} width={isMobile ? 280 : 550} />
+                <BarProgress perCent={420} width={isMobile ? 280 : 550} />
               </div>
               <div className={styles.statusProgress}>
                 <div>{t("roadMap.progress")}</div>
-                <div>100%</div>
+                <div>60%</div>
               </div>
             </Col>
           </Row>
