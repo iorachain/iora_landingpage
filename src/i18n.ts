@@ -5,7 +5,7 @@ import ptBr from "./locales/ptBR/language.json";
 import esLatam from "./locales/esLatam/language.json";
 import detector from "i18next-browser-languagedetector";
 
-export const defaultNS = "ptBr";
+export const defaultNS = "en";
 export const resources = {
   en: {
     translation: en,
@@ -22,7 +22,7 @@ i18n
   .use(detector)
   .use(initReactI18next)
   .init({
-    lng: "ptBr",
+    lng: "en",
     fallbackLng: "en",
     resources,
     interpolation: {

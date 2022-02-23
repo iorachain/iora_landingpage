@@ -17,13 +17,13 @@
     "latam": "LATAM"
   },
   "features": {
-    "ethereumFork": "ETHEREUM CLIQUE UPGRADED FORK",
+    "ethereumFork": "ETHEREUM PROOF-OF-STAKE UPGRADED FORK",
     "ethereumForkDescription": "Our development team are developing new features to adapt our Latin american market. Fast and safe protocols.",
     "ethereumBuiltInSolidy": "BUILDING IN SOLIDITY",
     "ethereumBuiltInSolidyDescription": "We will support all smart contracts from Ethereum/Binance Smart Chain",
     "CBDCIntegrations": "LOOKING FOR CBDC INTEGRATIONS",
     "CBDCIntegrationsDescription": "IoraChain have been created to Latam market. All features is focused on latin demand and also integrated for the CBDC.",
-    "NFTMetaverses": "NFT&apos;s, LIVESTREAMING and METAVERSES",
+    "NFTMetaverses": "NFT's, LIVESTREAMING and METAVERSES",
     "NFTMetaversesDescriptions": "Iora chain has started a MVP process called IoraPay. Fast payment system integrated from PIX (Brazillian system payment)"
   },
   "dapps": {

@@ -108,23 +108,25 @@ const Header = () => {
                   <Image src={GlobalImg} height={30} />
                 </div>
                 <Menu
-                  id="langMenu"
                   anchorEl={anchorEl}
+                  className="d-flex flex-column"
                   open={open}
                   onClose={handleClose}
                   MenuListProps={{
                     "aria-labelledby": "langs-button",
                   }}
                 >
-                  <MenuItem onClick={() => handleClose("en")}>
-                    English (USA)
-                  </MenuItem>
-                  <MenuItem onClick={() => handleClose("ptBr")}>
-                    Português (Brasil)
-                  </MenuItem>
-                  <MenuItem onClick={() => handleClose("esLatam")}>
-                    Spanish (Latin America)
-                  </MenuItem>
+                  <div id={styles.langMenu}>
+                    <MenuItem onClick={() => handleClose("en")}>
+                      English (USA)
+                    </MenuItem>
+                    <MenuItem onClick={() => handleClose("ptBr")}>
+                      Português (Brasil)
+                    </MenuItem>
+                    <MenuItem onClick={() => handleClose("esLatam")}>
+                      Spanish (Latin America)
+                    </MenuItem>
+                  </div>
                 </Menu>
               </div>
             </div>

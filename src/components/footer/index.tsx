@@ -3,6 +3,8 @@ import { Image, Row, Col, Container } from "react-bootstrap";
 import IoraChain from "../../assets/imgs/iorachain.svg";
 import { isMobile, BrowserView, MobileView } from "react-device-detect";
 import { useTranslation } from "react-i18next";
+import { Button } from "@material-ui/core";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const Footer = () => {
   const [t] = useTranslation();
@@ -32,29 +34,70 @@ const Footer = () => {
             <BrowserView>
               <Row>
                 <div className={styles.footerDirection}>
-                  <Col md={3} className={styles.footerDapps}>
-                    <b>{t("footer.dapps")}</b>
-                    <span>IoraPay</span>
-                    <span>Praora</span>
-                  </Col>
-                  <Col md={3} className={styles.footerDocumentation}>
+                  <Col md={4} className={styles.footerDocumentation}>
                     <b>{t("footer.documentations")}</b>
-                    <span>{t("footer.aboutUs")}</span>
-                    <span>{t("footer.team")}</span>
-                    <span>{t("footer.whitepaper")}</span>
+                    <span>
+                      <Button
+                        variant="text"
+                        className={styles.btnLinks}
+                        href="https://docs.iorachain.com"
+                      >
+                        {t("footer.whitepaper")}
+                      </Button>
+                    </span>
                   </Col>
-                  <Col md={3} className={styles.footerLinks}>
+                  <Col md={4} className={styles.footerLinks}>
                     <b>Links</b>
                     <span>{t("footer.features")}</span>
-                    <span>{t("footer.roadmap")}</span>
+                    <Link
+                      to="RoadmapSection"
+                      spy={true}
+                      smooth={true}
+                      offset={-70}
+                      duration={500}
+                    >
+                      <span>{t("header.roadmap")}</span>
+                    </Link>
                     <span>{t("footer.tokenSale")}</span>
                   </Col>
-                  <Col md={3} className={styles.footerContactUs}>
+                  <Col md={4} className={styles.footerContactUs}>
                     <b>{t("footer.contactUs")}</b>
-                    <span>Discord</span>
-                    <span>Github</span>
-                    <span>Linkedin</span>
-                    <span>Instagram</span>
+                    <span>
+                      <Button
+                        variant="text"
+                        className={styles.btnLinks}
+                        href="https://discord.gg/9pCfzNwVRU"
+                      >
+                        Discord
+                      </Button>
+                    </span>
+                    <span>
+                      <Button
+                        variant="text"
+                        className={styles.btnLinks}
+                        href="https://github.com/iorachain"
+                      >
+                        Github
+                      </Button>
+                    </span>
+                    <span>
+                      <Button
+                        variant="text"
+                        className={styles.btnLinks}
+                        href="https://www.linkedin.com/company/iorachain"
+                      >
+                        Linkedin
+                      </Button>
+                    </span>
+                    <span>
+                      <Button
+                        variant="text"
+                        className={styles.btnLinks}
+                        href="https://www.instagram.com/iorachain/"
+                      >
+                        Instagram
+                      </Button>
+                    </span>
                   </Col>
                 </div>
               </Row>

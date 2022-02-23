@@ -74,6 +74,13 @@
     align-items: center;
   }
 
+  .btnLinks {
+    color: $white;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+  }
   .footerDirection {
     display: flex;
     flex-direction: row;

@@ -32,7 +32,8 @@ const WorkWithUs = () => {
             <Button
               variant="contained"
               size="large"
-              className={styles.explorerButton}
+              className={styles.hireButton}
+              href="https://linkedin.com/company/iorachain"
             >
               {t("workingWIthUs.getStarted")}
             </Button>
