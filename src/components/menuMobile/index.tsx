@@ -11,6 +11,7 @@ import BrazilFlag from "../../assets/imgs/br_flag.png";
 import USAFlag from "../../assets/imgs/usa_flag.png";
 import LatamFlag from "../../assets/imgs/latam_flag.png";
 import { Image } from "react-bootstrap";
+import Button from "@mui/material/Button";
 
 const MenuMobile = () => {
   const { t, i18n } = useTranslation();
@@ -45,9 +46,20 @@ const MenuMobile = () => {
         >
           <span>{t("header.roadmap")}</span>
         </Link>
-        <span>{t("header.tokenSale")}</span>
-        <span>{t("header.whitepaper")}</span>
-        <span>{t("header.aboutUs")}</span>
+        <Button
+          variant="text"
+          className={styles.btnLinks}
+          href="https://forms.gle/ErD6n5i9YuQ6m3JC6"
+        >
+          <span>{t("header.tokenSale")}</span>
+        </Button>
+        <Button
+          variant="text"
+          className={styles.btnLinks}
+          href="https://docs.iorachain.com"
+        >
+          <span>{t("header.whitepaper")}</span>
+        </Button>
       </div>
       <Accordion>
         <AccordionSummary

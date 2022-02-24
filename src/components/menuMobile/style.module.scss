@@ -21,6 +21,16 @@
     display: flex;
     justify-content: flex-end;
   }
+
+  .btnLinks {
+    display: flex;
+    justify-content: flex-start;
+    color: $black;
+    font-size: 22px;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 #SelectLanguages {
