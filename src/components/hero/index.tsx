@@ -24,7 +24,7 @@ const Hero = () => {
               variant="contained"
               size="large"
               className={styles.actionButton}
-              href="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
+              href="https://forms.gle/ErD6n5i9YuQ6m3JC6"
             >
               {t("hero.ioraToken")}
             </Button>
