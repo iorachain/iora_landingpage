@@ -56,7 +56,7 @@ const MenuMobile = () => {
         <Button
           variant="text"
           className={styles.btnLinks}
-          href="https://docs.iorachain.com"
+          href="https://info.iorachain.com"
         >
           <span>{t("header.whitepaper")}</span>
         </Button>

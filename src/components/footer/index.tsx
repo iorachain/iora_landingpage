@@ -40,7 +40,7 @@ const Footer = () => {
                       <Button
                         variant="text"
                         className={styles.btnLinks}
-                        href="https://docs.iorachain.com"
+                        href="https://info.iorachain.com"
                       >
                         {t("footer.whitepaper")}
                       </Button>
