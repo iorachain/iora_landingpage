@@ -12,6 +12,8 @@ const Dialog = React.lazy(() => import("./pages/dialog"));
 const Waiting = React.lazy(() => import("./components/waiting"));
 const Approved = React.lazy(() => import("./components/approved"));
 
+const Error404 = React.lazy(() => import("./components/error404"));
+
 function App() {
   return (
     <ThemeProvider theme={theme}>
@@ -22,6 +24,7 @@ function App() {
               <Route path="/" element={<Home />} />
             </Route>
             <Route element={<Dialog />}>
+              <Route path="*" element={<Error404 />} />
               <Route path="/waiting" element={<Waiting />} />
               <Route path="/approved" element={<Approved />} />
             </Route>
