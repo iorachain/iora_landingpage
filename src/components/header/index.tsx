@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import IoraChain from "../../assets/imgs/iorachain.svg";
 import { Image, Navbar, Col, Row } from "react-bootstrap";
 import styles from "./styles.module.scss";
@@ -14,6 +14,7 @@ import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import MenuContainer from "../menuMobile";
 import Button from "@mui/material/Button";
+import { Link as SLink } from "react-router-dom";
 
 interface OnClicKEvent {
   currentTarget: unknown;
@@ -66,12 +67,14 @@ const Header = () => {
     <Row>
       <Navbar id={styles.Header}>
         <Col md={2}>
-          <div className={styles.navbarBrand}>
-            <Image height={45} src={IoraChain} alt="Iora Chain" />
-            <span>
-              <b>iora</b>chain
-            </span>
-          </div>
+          <SLink to="/">
+            <div className={styles.navbarBrand}>
+              <Image height={45} src={IoraChain} alt="Iora Chain" />
+              <span>
+                <b>iora</b>chain
+              </span>
+            </div>
+          </SLink>
         </Col>
         <Col md={10}>
           <BrowserView>
