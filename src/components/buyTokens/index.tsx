@@ -28,6 +28,7 @@ const BuyTokens = () => {
             variant="contained"
             size="large"
             href="https://forms.gle/ErD6n5i9YuQ6m3JC6"
+            id="gtm_button_click"
             target="_blank"
             startIcon={
               <Image height={50} src={GoogleForm} alt={t("dialog.fillForm")} />

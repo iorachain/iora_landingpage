@@ -23,10 +23,11 @@ const Hero = () => {
             <Button
               variant="contained"
               size="large"
+              id="gtm_button_click"
               className={styles.actionButton}
               href="https://forms.gle/ErD6n5i9YuQ6m3JC6"
             >
-              {t("hero.ioraToken")}
+              {t("hero.buyIoraToken")}
             </Button>
             <Button
               variant="contained"

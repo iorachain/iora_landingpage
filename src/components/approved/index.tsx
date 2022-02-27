@@ -20,6 +20,7 @@ const Waiting = () => {
           <Button
             variant="contained"
             size="large"
+            id="gtm_button_click"
             href="https://forms.gle/ErD6n5i9YuQ6m3JC6"
             target="_blank"
             startIcon={
