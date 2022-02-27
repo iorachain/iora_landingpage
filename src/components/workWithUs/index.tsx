@@ -11,9 +11,9 @@ const WorkWithUs = () => {
 
   return (
     <section id={styles.WorkWithUs}>
-      <div className={styles.titleWorkWithUs}>
+      <h1 className={styles.titleWorkWithUs}>
         {t("workingWIthUs.enjoyOurTeam")}
-      </div>
+      </h1>
       <Row>
         <Col>
           <div className={styles.figureHireTeam}>

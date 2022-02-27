@@ -13,7 +13,7 @@ const Features = () => {
   return (
     <section id="FeaturesSection">
       <div id={styles.Features}>
-        <div className={styles.title}>{t("header.features")}</div>
+        <h1 className={styles.title}>{t("header.features")}</h1>
         <div className={styles.listSection}>
           <div className={styles.listRow}>
             <Image
@@ -22,9 +22,9 @@ const Features = () => {
               alt={t("features.ethereumFork")}
             />
             <div className={styles.listFeatures}>
-              <div className={styles.featuresTitle}>
+              <h2 className={styles.featuresTitle}>
                 {t("features.ethereumFork")}
-              </div>
+              </h2>
               <div className={styles.featuresSubTitle}>
                 {t("features.ethereumForkDescription")}
               </div>
@@ -32,9 +32,9 @@ const Features = () => {
           </div>
           <div className={styles.listRow}>
             <div className={styles.listFeatures}>
-              <div className={styles.featuresTitle}>
+              <h2 className={styles.featuresTitle}>
                 {t("features.ethereumBuiltInSolidy")}
-              </div>
+              </h2>
               <div className={styles.featuresSubTitle}>
                 {t("features.ethereumBuiltInSolidyDescription")}
               </div>
@@ -52,9 +52,9 @@ const Features = () => {
               alt={t("features.CBDCIntegrations")}
             />
             <div className={styles.listFeatures}>
-              <div className={styles.featuresTitle}>
+              <h2 className={styles.featuresTitle}>
                 {t("features.CBDCIntegrations")}
-              </div>
+              </h2>
               <div className={styles.featuresSubTitle}>
                 {t("features.CBDCIntegrationsDescription")}
               </div>
@@ -62,9 +62,9 @@ const Features = () => {
           </div>
           <div className={styles.listRow}>
             <div className={styles.listFeatures}>
-              <div className={styles.featuresTitle}>
+              <h2 className={styles.featuresTitle}>
                 {t("features.NFTMetaverses")}
-              </div>
+              </h2>
               <div className={styles.featuresSubTitle}>
                 {t("features.NFTMetaversesDescriptions")}
               </div>

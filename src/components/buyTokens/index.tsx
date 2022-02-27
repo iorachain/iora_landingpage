@@ -11,7 +11,7 @@ const BuyTokens = () => {
 
   return (
     <section id={styles.BuyTokens}>
-      <div className={styles.titleTokens}>{t("buyTokens.buyIora")}</div>
+      <h1 className={styles.titleTokens}>{t("buyTokens.buyIora")}</h1>
       <div className={styles.tokenColumn}>
         <div className={styles.descriptionTokens}>
           <div className={styles.descriptionTokenColumn}>

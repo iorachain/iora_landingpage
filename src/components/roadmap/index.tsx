@@ -12,7 +12,7 @@ const Roadmap = () => {
     <section id="RoadmapSection">
       <div id={styles.Roadmap}>
         <div className={styles.sectionRoadMap}>
-          <div className={styles.titleRoadMap}>Roadmap</div>
+          <h1 className={styles.titleRoadMap}>Roadmap</h1>
           <Row className={styles.titleRow}>
             <Col xs={2} md={4} className={styles.roadMapLine}>
               <div className={styles.roadMapDescription}>
