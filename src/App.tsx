@@ -11,6 +11,8 @@ const Dialog = React.lazy(() => import("./pages/dialog"));
 
 const Waiting = React.lazy(() => import("./components/waiting"));
 const Approved = React.lazy(() => import("./components/approved"));
+const Privacy = React.lazy(() => import("./components/info/privacy"));
+const Terms = React.lazy(() => import("./components/info/terms"));
 
 const Error404 = React.lazy(() => import("./components/error404"));
 
@@ -27,6 +29,8 @@ function App() {
               <Route path="*" element={<Error404 />} />
               <Route path="/waiting" element={<Waiting />} />
               <Route path="/approved" element={<Approved />} />
+              <Route path="/privacy" element={<Privacy />} />
+              <Route path="/terms" element={<Terms />} />
             </Route>
           </Routes>
         </Suspense>

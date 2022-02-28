@@ -1,0 +1,26 @@
+@import "../../styles/global.scss";
+
+#TermsPrivacy {
+    display: flex;
+    flex-direction: column;
+    font-family: Manrope;
+    color: $white;
+    padding: 8vh;
+
+    h2 {
+        margin-top: 1vh;
+        font-size: 24px;
+        font-weight: 800;
+    }
+
+    h3 {
+        margin-top: 1vh;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    p {
+        margin-top: 1vh;
+        font-size: 18px;
+    }
+}
