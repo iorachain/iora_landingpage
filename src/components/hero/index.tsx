@@ -25,7 +25,7 @@ const Hero = () => {
               size="large"
               id="gtm_button_click"
               className={styles.actionButton}
-              href="https://pancakeswap.finance/swap?outputCurrency=0xBdE32737D0AF849b1d3161aB2b881339b8CC1707"
+              href="https://pancakeswap.finance/swap?outputCurrency=0xB70E1255446822E3B8dfe2d2c11fa1c9cb4a9c53"
             >
               {t("hero.buyIoraToken")}
             </Button>
